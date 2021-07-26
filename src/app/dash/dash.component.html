@@ -1,0 +1,19 @@
+<div class="grid-container">
+  <mat-grid-list cols="3" rowHeight=900px>
+    <mat-grid-tile *ngFor="let card of cards | async">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            {{card.title}}
+          </mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="https://pbs.twimg.com/media/EqAZDVCUYAELyF_.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-actions>
+          <button mat-button>FUCK</button>
+          <button mat-button>MARRY</button>
+          <button mat-button>KILL</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
