@@ -8,6 +8,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { LayoutModule } from '@angular/cdk/layout';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { SafeResourceUrlPipe } from './dash/safeResourceUrlPipe';
@@ -26,6 +27,7 @@ import { SafeResourceUrlPipe } from './dash/safeResourceUrlPipe';
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
+    MatButtonToggleModule,
     LayoutModule,
     HttpClientModule,
     HttpClientJsonpModule,

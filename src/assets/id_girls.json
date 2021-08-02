@@ -120,26 +120,6 @@
     "group": "4minute"
   },
   {
-    "id": 25,
-    "name": "Heeo",
-    "group": "4TEN"
-  },
-  {
-    "id": 26,
-    "name": "Hyeji",
-    "group": "4TEN"
-  },
-  {
-    "id": 27,
-    "name": "Hyejin",
-    "group": "4TEN"
-  },
-  {
-    "id": 28,
-    "name": "Yoon",
-    "group": "4TEN"
-  },
-  {
     "id": 29,
     "name": "Hyemi",
     "group": "9Muses"
@@ -241,7 +221,7 @@
   },
   {
     "id": 49,
-    "name": "Royeon",
+    "name": "Raon",
     "group": "ANS"
   },
   {
@@ -455,41 +435,6 @@
     "group": "BLACKPINK"
   },
   {
-    "id": 92,
-    "name": "Dayoung",
-    "group": "Blady"
-  },
-  {
-    "id": 93,
-    "name": "Gabin",
-    "group": "Blady"
-  },
-  {
-    "id": 94,
-    "name": "Giru",
-    "group": "Blady"
-  },
-  {
-    "id": 95,
-    "name": "Tina",
-    "group": "Blady"
-  },
-  {
-    "id": 96,
-    "name": "Yeeun",
-    "group": "Blady"
-  },
-  {
-    "id": 103,
-    "name": "Jiyoon",
-    "group": "Bolbbalgan4"
-  },
-  {
-    "id": 104,
-    "name": "Jiyoung",
-    "group": "Bolbbalgan4"
-  },
-  {
     "id": 119,
     "name": "Eunji",
     "group": "Brave Girls"
@@ -508,26 +453,6 @@
     "id": 122,
     "name": "Yuna",
     "group": "Brave Girls"
-  },
-  {
-    "id": 123,
-    "name": "Gain",
-    "group": "Brown Eyed Girls"
-  },
-  {
-    "id": 124,
-    "name": "Jea",
-    "group": "Brown Eyed Girls"
-  },
-  {
-    "id": 125,
-    "name": "Miryo",
-    "group": "Brown Eyed Girls"
-  },
-  {
-    "id": 126,
-    "name": "Narsha",
-    "group": "Brown Eyed Girls"
   },
   {
     "id": 127,
@@ -698,56 +623,6 @@
     "id": 169,
     "name": "Yeoreum",
     "group": "WJSN"
-  },
-  {
-    "id": 170,
-    "name": "ChaeY",
-    "group": "CRAXY"
-  },
-  {
-    "id": 171,
-    "name": "Hyejin",
-    "group": "CRAXY"
-  },
-  {
-    "id": 172,
-    "name": "Karin",
-    "group": "CRAXY"
-  },
-  {
-    "id": 173,
-    "name": "Swan",
-    "group": "CRAXY"
-  },
-  {
-    "id": 174,
-    "name": "Woo-ah",
-    "group": "CRAXY"
-  },
-  {
-    "id": 175,
-    "name": "Choa",
-    "group": "Crayon Pop"
-  },
-  {
-    "id": 176,
-    "name": "Ellin",
-    "group": "Crayon Pop"
-  },
-  {
-    "id": 177,
-    "name": "Geummi",
-    "group": "Crayon Pop"
-  },
-  {
-    "id": 178,
-    "name": "Soyul",
-    "group": "Crayon Pop"
-  },
-  {
-    "id": 179,
-    "name": "Way",
-    "group": "Crayon Pop"
   },
   {
     "id": 180,
@@ -1108,66 +983,6 @@
     "id": 251,
     "name": "Seoyeon",
     "group": "fromis_9"
-  },
-  {
-    "id": 252,
-    "name": "Shinyoung",
-    "group": "G-reyish"
-  },
-  {
-    "id": 253,
-    "name": "Yena",
-    "group": "G-reyish"
-  },
-  {
-    "id": 254,
-    "name": "Yeso",
-    "group": "G-reyish"
-  },
-  {
-    "id": 255,
-    "name": "Gaga",
-    "group": "Gate9"
-  },
-  {
-    "id": 256,
-    "name": "Haeyeon",
-    "group": "Gate9"
-  },
-  {
-    "id": 257,
-    "name": "Haru",
-    "group": "Gate9"
-  },
-  {
-    "id": 258,
-    "name": "Juju",
-    "group": "Gate9"
-  },
-  {
-    "id": 259,
-    "name": "Kady",
-    "group": "Gate9"
-  },
-  {
-    "id": 260,
-    "name": "Taera",
-    "group": "Gate9"
-  },
-  {
-    "id": 261,
-    "name": "Vivian",
-    "group": "Gate9"
-  },
-  {
-    "id": 262,
-    "name": "Yeori",
-    "group": "Gate9"
-  },
-  {
-    "id": 263,
-    "name": "Yoon",
-    "group": "Gate9"
   },
   {
     "id": 264,
@@ -1645,16 +1460,6 @@
     "group": "KARD"
   },
   {
-    "id": 362,
-    "name": "Boa",
-    "group": "KEEMBO"
-  },
-  {
-    "id": 363,
-    "name": "Bohyung",
-    "group": "KEEMBO"
-  },
-  {
     "id": 364,
     "name": "Haein",
     "group": "LABOUM"
@@ -1910,31 +1715,6 @@
     "group": "MAJORS"
   },
   {
-    "id": 415,
-    "name": "Chaewon",
-    "group": "Maka Maka"
-  },
-  {
-    "id": 416,
-    "name": "Daseul",
-    "group": "Maka Maka"
-  },
-  {
-    "id": 417,
-    "name": "Dia",
-    "group": "Maka Maka"
-  },
-  {
-    "id": 418,
-    "name": "EunB",
-    "group": "Maka Maka"
-  },
-  {
-    "id": 419,
-    "name": "Heesu",
-    "group": "Maka Maka"
-  },
-  {
     "id": 420,
     "name": "Hwasa",
     "group": "Mamamoo"
@@ -1973,26 +1753,6 @@
     "id": 427,
     "name": "Semmi",
     "group": "Matilda"
-  },
-  {
-    "id": 428,
-    "name": "Chahee",
-    "group": "MELODYDAY"
-  },
-  {
-    "id": 429,
-    "name": "Yein",
-    "group": "MELODYDAY"
-  },
-  {
-    "id": 430,
-    "name": "Yeoeun",
-    "group": "MELODYDAY"
-  },
-  {
-    "id": 431,
-    "name": "Yoomin",
-    "group": "MELODYDAY"
   },
   {
     "id": 432,
@@ -2185,31 +1945,6 @@
     "group": "Pixy"
   },
   {
-    "id": 483,
-    "name": "Eunjin",
-    "group": "Playback"
-  },
-  {
-    "id": 484,
-    "name": "Hayoung",
-    "group": "Playback"
-  },
-  {
-    "id": 485,
-    "name": "Woolim",
-    "group": "Playback"
-  },
-  {
-    "id": 486,
-    "name": "Yujin",
-    "group": "Playback"
-  },
-  {
-    "id": 487,
-    "name": "Yunji",
-    "group": "Playback"
-  },
-  {
     "id": 488,
     "name": "EunB",
     "group": "PRECIOUS"
@@ -2400,31 +2135,6 @@
     "group": "Red Velvet"
   },
   {
-    "id": 526,
-    "name": "Ari",
-    "group": "RedSquare"
-  },
-  {
-    "id": 527,
-    "name": "Bomin",
-    "group": "RedSquare"
-  },
-  {
-    "id": 528,
-    "name": "Chaea",
-    "group": "RedSquare"
-  },
-  {
-    "id": 529,
-    "name": "Green",
-    "group": "RedSquare"
-  },
-  {
-    "id": 530,
-    "name": "Lina",
-    "group": "RedSquare"
-  },
-  {
     "id": 531,
     "name": "Dahyun",
     "group": "Rocket Punch"
@@ -2472,16 +2182,6 @@
   {
     "id": 540,
     "name": "Seulgi",
-    "group": "S#aFLA"
-  },
-  {
-    "id": 541,
-    "name": "Suhyeon",
-    "group": "S#aFLA"
-  },
-  {
-    "id": 542,
-    "name": "Yujin",
     "group": "S#aFLA"
   },
   {
@@ -2903,26 +2603,6 @@
     "id": 626,
     "name": "Yoonjo",
     "group": "UNI.T"
-  },
-  {
-    "id": 627,
-    "name": "Jiae",
-    "group": "Wassup"
-  },
-  {
-    "id": 628,
-    "name": "Nari",
-    "group": "Wassup"
-  },
-  {
-    "id": 629,
-    "name": "Sujin",
-    "group": "Wassup"
-  },
-  {
-    "id": 630,
-    "name": "Woojoo",
-    "group": "Wassup"
   },
   {
     "id": 631,

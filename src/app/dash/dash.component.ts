@@ -28,9 +28,10 @@ export class DashComponent {
   }
 
   redditSearch(girl: Girl) {
-    const g = girl.group.replace(' ', '%2B')
+    const g = girl.group.replace(' ', '%2B').replace('IZ*ONE', 'IZ').replace('(G)I-DLE', 'DLE')
     const n = girl.name.replace(' ', '%2B')
-    return `https://reddit.com/r/kpics/search.json?jsonp=JSONP_CALLBACK&q=flair%3A${g}+${n}+-site%3Agfycat.com+-site%3Areddit.com&restrict_sr=on&sort=top&t=all`
+    const exclusions = `-site%3Agfycat.com+-site%3Areddit.com+-site%3Av.redd.it+-url%3Agallery`
+    return `https://reddit.com/r/kpics/search.json?jsonp=JSONP_CALLBACK&q=flair%3A${g}+${n}+${exclusions}&restrict_sr=on&sort=top&t=all`
   }
 
   getRedditImage(girl: Girl): Observable<string> {

@@ -8,13 +8,19 @@
             {{card.title}}
           </mat-card-title>
         </mat-card-header>
-        <img [attr.src]="card.url | safeResourceUrl" mat-card-image
-          alt="no image on r/kpics, probably nugu, check console">
-        <mat-card-actions layout-align="center">
-          <button formcontrol mat-button [id]="'fuck-'+i">FUCK</button>
+        <img [attr.src]="card.url | safeResourceUrl" mat-card-image alt="nugu? Check console">
+        <mat-card-actions>
+          <!-- <button formcontrol mat-button [id]="'fuck-'+i">FUCK</button>
           <button formcontrol mat-button [id]="'marry-'+i">MARRY</button>
-          <button formcontrol mat-button [id]="'kill-'+i">KILL</button>
+          <button formcontrol mat-button [id]="'kill-'+i">KILL</button> -->
+          <mat-button-toggle-group>
+            <mat-button-toggle value="fuck">fuck</mat-button-toggle>
+            <mat-button-toggle value="marry">marry</mat-button-toggle>
+            <mat-button-toggle value="kill">kill</mat-button-toggle>
+          </mat-button-toggle-group>
+
         </mat-card-actions>
+
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
