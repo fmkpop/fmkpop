@@ -7,7 +7,7 @@
             {{card.title}}
           </mat-card-title>
         </mat-card-header>
-        <img src={{ card.url | safeResourceUrl }} mat-card-image alt="No image available">
+        <img [attr.src]="card.url | safeResourceUrl" mat-card-image alt="No image available">
         <mat-card-actions>
           <button mat-button>FUCK</button>
           <button mat-button>MARRY</button>
