@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from "@angular/core";
-import { DomSanitizer, SafeResourceUrl, SafeUrl } from "@angular/platform-browser";
+import { DomSanitizer, SafeUrl } from "@angular/platform-browser";
 
 @Pipe({
   name: 'safeResourceUrl',

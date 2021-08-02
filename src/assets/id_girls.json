@@ -480,36 +480,6 @@
     "group": "Blady"
   },
   {
-    "id": 97,
-    "name": "Ayamy",
-    "group": "Bling Bling"
-  },
-  {
-    "id": 98,
-    "name": "Jieun",
-    "group": "Bling Bling"
-  },
-  {
-    "id": 99,
-    "name": "Juhyun",
-    "group": "Bling Bling"
-  },
-  {
-    "id": 100,
-    "name": "Marin",
-    "group": "Bling Bling"
-  },
-  {
-    "id": 101,
-    "name": "Narin",
-    "group": "Bling Bling"
-  },
-  {
-    "id": 102,
-    "name": "Yubin",
-    "group": "Bling Bling"
-  },
-  {
     "id": 103,
     "name": "Jiyoon",
     "group": "Bolbbalgan4"
@@ -518,76 +488,6 @@
     "id": 104,
     "name": "Jiyoung",
     "group": "Bolbbalgan4"
-  },
-  {
-    "id": 105,
-    "name": "Chaehyun",
-    "group": "Bonus Baby"
-  },
-  {
-    "id": 106,
-    "name": "Dayun",
-    "group": "Bonus Baby"
-  },
-  {
-    "id": 107,
-    "name": "Gaon",
-    "group": "Bonus Baby"
-  },
-  {
-    "id": 108,
-    "name": "Hayoon",
-    "group": "Bonus Baby"
-  },
-  {
-    "id": 109,
-    "name": "Kongyoo",
-    "group": "Bonus Baby"
-  },
-  {
-    "id": 110,
-    "name": "Moonhee",
-    "group": "Bonus Baby"
-  },
-  {
-    "id": 111,
-    "name": "Ahyoon",
-    "group": "BOTOPASS"
-  },
-  {
-    "id": 112,
-    "name": "Cui Xiang",
-    "group": "BOTOPASS"
-  },
-  {
-    "id": 113,
-    "name": "Harin",
-    "group": "BOTOPASS"
-  },
-  {
-    "id": 114,
-    "name": "Jiwon",
-    "group": "BOTOPASS"
-  },
-  {
-    "id": 115,
-    "name": "Mihee",
-    "group": "BOTOPASS"
-  },
-  {
-    "id": 116,
-    "name": "Ria",
-    "group": "BOTOPASS"
-  },
-  {
-    "id": 117,
-    "name": "Seoyoon",
-    "group": "BOTOPASS"
-  },
-  {
-    "id": 118,
-    "name": "Shiho",
-    "group": "BOTOPASS"
   },
   {
     "id": 119,
@@ -678,51 +578,6 @@
     "id": 136,
     "name": "Yiyeon",
     "group": "BVNDIT"
-  },
-  {
-    "id": 137,
-    "name": "Sieun",
-    "group": "CHECKMATE"
-  },
-  {
-    "id": 138,
-    "name": "Suri",
-    "group": "CHECKMATE"
-  },
-  {
-    "id": 139,
-    "name": "Bora",
-    "group": "Cherry Bullet"
-  },
-  {
-    "id": 140,
-    "name": "Chaerin",
-    "group": "Cherry Bullet"
-  },
-  {
-    "id": 141,
-    "name": "Haeyoon",
-    "group": "Cherry Bullet"
-  },
-  {
-    "id": 142,
-    "name": "Jiwon",
-    "group": "Cherry Bullet"
-  },
-  {
-    "id": 143,
-    "name": "May",
-    "group": "Cherry Bullet"
-  },
-  {
-    "id": 144,
-    "name": "Remi",
-    "group": "Cherry Bullet"
-  },
-  {
-    "id": 145,
-    "name": "Yuju",
-    "group": "Cherry Bullet"
   },
   {
     "id": 146,
@@ -1056,7 +911,7 @@
   },
   {
     "id": 212,
-    "name": "E:U",
+    "name": "EU",
     "group": "Everglow"
   },
   {
@@ -1630,21 +1485,6 @@
     "group": "Ho1iday"
   },
   {
-    "id": 327,
-    "name": "Miko",
-    "group": "Honey Popcorn"
-  },
-  {
-    "id": 328,
-    "name": "Moko",
-    "group": "Honey Popcorn"
-  },
-  {
-    "id": 329,
-    "name": "Yua",
-    "group": "Honey Popcorn"
-  },
-  {
     "id": 330,
     "name": "Dain",
     "group": "HOT ISSUE"
@@ -1842,17 +1682,17 @@
   {
     "id": 369,
     "name": "Ashley",
-    "group": "Ladies' Code"
+    "group": "Ladies Code"
   },
   {
     "id": 370,
     "name": "Sojung",
-    "group": "Ladies' Code"
+    "group": "Ladies Code"
   },
   {
     "id": 371,
     "name": "Zuny",
-    "group": "Ladies' Code"
+    "group": "Ladies Code"
   },
   {
     "id": 372,
@@ -2175,31 +2015,6 @@
     "group": "miss A"
   },
   {
-    "id": 436,
-    "name": "Arie",
-    "group": "MIXX"
-  },
-  {
-    "id": 437,
-    "name": "Hanna",
-    "group": "MIXX"
-  },
-  {
-    "id": 438,
-    "name": "Heeyu",
-    "group": "MIXX"
-  },
-  {
-    "id": 439,
-    "name": "Liyah",
-    "group": "MIXX"
-  },
-  {
-    "id": 440,
-    "name": "Mia",
-    "group": "MIXX"
-  },
-  {
     "id": 441,
     "name": "AhIn",
     "group": "MOMOLAND"
@@ -2338,46 +2153,6 @@
     "id": 468,
     "name": "Yeonjoo",
     "group": "P.O.P"
-  },
-  {
-    "id": 469,
-    "name": "Arang",
-    "group": "Pink Fantasy"
-  },
-  {
-    "id": 470,
-    "name": "Daewang Nim",
-    "group": "Pink Fantasy"
-  },
-  {
-    "id": 471,
-    "name": "Harin",
-    "group": "Pink Fantasy"
-  },
-  {
-    "id": 472,
-    "name": "Heesun",
-    "group": "Pink Fantasy"
-  },
-  {
-    "id": 473,
-    "name": "Miku",
-    "group": "Pink Fantasy"
-  },
-  {
-    "id": 474,
-    "name": "Momoka",
-    "group": "Pink Fantasy"
-  },
-  {
-    "id": 475,
-    "name": "Seea",
-    "group": "Pink Fantasy"
-  },
-  {
-    "id": 476,
-    "name": "Yechan",
-    "group": "Pink Fantasy"
   },
   {
     "id": 477,
@@ -2676,7 +2451,7 @@
   },
   {
     "id": 536,
-    "name": "Yunkyung",
+    "name": "Yunkyoung",
     "group": "Rocket Punch"
   },
   {

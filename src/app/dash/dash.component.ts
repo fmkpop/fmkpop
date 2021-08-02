@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
 import { Observable, forkJoin } from 'rxjs';
 import { map } from 'rxjs/operators';
 import data from '../../assets/id_girls.json'
@@ -12,7 +11,7 @@ import { Girl, RedditJson, Card } from '../model';
   styleUrls: ['./dash.component.css']
 })
 export class DashComponent {
-  constructor(private http: HttpClient, public sanitizer: DomSanitizer) { }
+  constructor(private http: HttpClient) { }
 
   cards: Observable<Card[]> = forkJoin([{}, {}, {}].map(_ => {
     const girl = this.randomGirl()
@@ -23,20 +22,23 @@ export class DashComponent {
 
   randomGirl(): Girl {
     const rand = Math.floor(Math.random() * 657)
-    const girl = data.filter(girl => girl.id === rand)[0]
+    const girl = data.filter(girl => girl.id === rand)[0] || this.randomGirl()
     console.log(girl)
     return girl
   }
 
-  redditSearch(g: Girl) {
-    return `https://reddit.com/r/kpics/search.json?jsonp=JSONP_CALLBACK&q=flair%3A${g.group}+${g.name}+site%3Ai.redd.it&restrict_sr=on&sort=top&t=all`
+  redditSearch(girl: Girl) {
+    const g = girl.group.replace(' ', '%2B')
+    const n = girl.name.replace(' ', '%2B')
+    return `https://reddit.com/r/kpics/search.json?jsonp=JSONP_CALLBACK&q=flair%3A${g}+${n}+-site%3Agfycat.com+-site%3Areddit.com&restrict_sr=on&sort=top&t=all`
   }
 
   getRedditImage(girl: Girl): Observable<string> {
-    return this.http.jsonp<RedditJson>(this.redditSearch(girl), '')
-      .pipe(map(res => {
-        const url = JSON.stringify(res.data?.children[0]?.data?.url) || ''
-        return url.substring(1, url.length - 1)
-      }))
+    const reddit = this.redditSearch(girl)
+    console.log(String(reddit).replace('.json', ''))
+    return this.http.jsonp<RedditJson>(reddit, '').pipe(map(res => {
+      const url = JSON.stringify(res.data?.children[0]?.data?.url) || ''
+      return url.substring(1, url.length - 1)
+    }))
   }
 }

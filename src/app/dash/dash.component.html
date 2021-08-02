@@ -1,18 +1,19 @@
 <div class="grid-container">
   <h1>fmkpop</h1>
   <mat-grid-list cols="3">
-    <mat-grid-tile fxLayoutAlign="start start" *ngFor="let card of cards | async">
+    <mat-grid-tile *ngFor="let i = index; let card of cards | async">
       <mat-card class="dashboard-card">
         <mat-card-header>
           <mat-card-title>
             {{card.title}}
           </mat-card-title>
         </mat-card-header>
-        <img [attr.src]="card.url | safeResourceUrl" mat-card-image alt="No image available">
+        <img [attr.src]="card.url | safeResourceUrl" mat-card-image
+          alt="no image on r/kpics, probably nugu, check console">
         <mat-card-actions layout-align="center">
-          <button mat-button>FUCK</button>
-          <button mat-button>MARRY</button>
-          <button mat-button>KILL</button>
+          <button formcontrol mat-button [id]="'fuck-'+i">FUCK</button>
+          <button formcontrol mat-button [id]="'marry-'+i">MARRY</button>
+          <button formcontrol mat-button [id]="'kill-'+i">KILL</button>
         </mat-card-actions>
       </mat-card>
     </mat-grid-tile>
