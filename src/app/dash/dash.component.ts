@@ -4,8 +4,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { Observable, forkJoin } from 'rxjs';
 import { map } from 'rxjs/operators';
 import data from '../../assets/id_girls.json'
-import { Girl, RedditUrl, Card } from '../model';
-import { SafeResourceUrlPipe } from './safeResourceUrlPipe';
+import { Girl, RedditJson, Card } from '../model';
 
 @Component({
   selector: 'app-dash',
@@ -24,8 +23,9 @@ export class DashComponent {
 
   randomGirl(): Girl {
     const rand = Math.floor(Math.random() * 657)
-    console.log(rand)
-    return data.filter(girl => girl.id === rand)[0]
+    const girl = data.filter(girl => girl.id === rand)[0]
+    console.log(girl)
+    return girl
   }
 
   redditSearch(g: Girl) {
@@ -33,7 +33,7 @@ export class DashComponent {
   }
 
   getRedditImage(girl: Girl): Observable<string> {
-    return this.http.jsonp<RedditUrl>(this.redditSearch(girl), '')
+    return this.http.jsonp<RedditJson>(this.redditSearch(girl), '')
       .pipe(map(res => {
         const url = JSON.stringify(res.data?.children[0]?.data?.url) || ''
         return url.substring(1, url.length - 1)

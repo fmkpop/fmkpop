@@ -11,7 +11,7 @@ export interface Card {
   url: string
 }
 
-export interface RedditUrl {
+export interface RedditJson {
   data: {
     children: [
       {

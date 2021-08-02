@@ -1,6 +1,7 @@
 <div class="grid-container">
-  <mat-grid-list cols="3" rowHeight=900px>
-    <mat-grid-tile *ngFor="let card of cards | async">
+  <h1>fmkpop</h1>
+  <mat-grid-list cols="3">
+    <mat-grid-tile fxLayoutAlign="start start" *ngFor="let card of cards | async">
       <mat-card class="dashboard-card">
         <mat-card-header>
           <mat-card-title>
@@ -8,7 +9,7 @@
           </mat-card-title>
         </mat-card-header>
         <img [attr.src]="card.url | safeResourceUrl" mat-card-image alt="No image available">
-        <mat-card-actions>
+        <mat-card-actions layout-align="center">
           <button mat-button>FUCK</button>
           <button mat-button>MARRY</button>
           <button mat-button>KILL</button>
