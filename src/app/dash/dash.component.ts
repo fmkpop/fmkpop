@@ -23,12 +23,8 @@ export class DashComponent {
     }))
   }))
 
-  clicked() {
-
-  }
-
   randomGirl(): Girl {
-    const rand = Math.floor(Math.random() * 657)
+    const rand = Math.floor(Math.random() * 4) + 1
     const girl = data.filter(girl => girl.id === rand)[0] || this.randomGirl()
     console.log(girl)
     return girl
@@ -37,7 +33,7 @@ export class DashComponent {
   redditSearch(girl: Girl) {
     const g = (girl.group as any).replaceAll(' ', '%2B').replace('IZ*ONE', 'IZ').replace('(G)I-DLE', 'DLE')
     const n = girl.name.replace(' ', '%2B')
-    const exclusions = `-site%3Agfycat.com+-site%3Areddit.com+-site%3Av.redd.it+-url%3Agallery`
+    const exclusions = `-site%3Agfycat.com+-site%3Av.redd.it+-url%3Agallery+-url%3A%2F%2Fa%2F%2F`
     return `https://reddit.com/r/kpics/search.json?jsonp=JSONP_CALLBACK&q=flair%3A${g}+${n}+${exclusions}&restrict_sr=on&sort=top&t=all`
   }
 
@@ -45,7 +41,8 @@ export class DashComponent {
     const reddit = this.redditSearch(girl)
     console.log(String(reddit).replace('.json', ''))
     return this.http.jsonp<RedditJson>(reddit, '').pipe(map(res => {
-      const url = JSON.stringify(res.data?.children[0]?.data?.url) || ''
+      const rand = Math.floor(Math.random() * 3)
+      const url = JSON.stringify(res.data?.children[rand]?.data?.url) || ''
       return url.substring(1, url.length - 1)
     }))
   }

@@ -225,12 +225,12 @@
     "group": "ANS"
   },
   {
-    "id": 50,
+    "id": 0,
     "name": "Chanmi",
     "group": "AoA"
   },
   {
-    "id": 51,
+    "id": 0,
     "name": "Hyejeong",
     "group": "AoA"
   },
@@ -240,7 +240,7 @@
     "group": "AoA"
   },
   {
-    "id": 53,
+    "id": 0,
     "name": "Yuna",
     "group": "AoA"
   },
@@ -1183,81 +1183,6 @@
     "id": 321,
     "name": "Yuha",
     "group": "Hinapia"
-  },
-  {
-    "id": 322,
-    "name": "Cheongeum",
-    "group": "Ho1iday"
-  },
-  {
-    "id": 323,
-    "name": "Dany",
-    "group": "Ho1iday"
-  },
-  {
-    "id": 324,
-    "name": "Haru",
-    "group": "Ho1iday"
-  },
-  {
-    "id": 325,
-    "name": "Heejoo",
-    "group": "Ho1iday"
-  },
-  {
-    "id": 326,
-    "name": "Saebyeok",
-    "group": "Ho1iday"
-  },
-  {
-    "id": 330,
-    "name": "Dain",
-    "group": "HOT ISSUE"
-  },
-  {
-    "id": 331,
-    "name": "Dana",
-    "group": "HOT ISSUE"
-  },
-  {
-    "id": 332,
-    "name": "Hyeongshin",
-    "group": "HOT ISSUE"
-  },
-  {
-    "id": 333,
-    "name": "Mayna",
-    "group": "HOT ISSUE"
-  },
-  {
-    "id": 334,
-    "name": "Nahyun",
-    "group": "HOT ISSUE"
-  },
-  {
-    "id": 335,
-    "name": "Yebin",
-    "group": "HOT ISSUE"
-  },
-  {
-    "id": 336,
-    "name": "Yewon",
-    "group": "HOT ISSUE"
-  },
-  {
-    "id": 337,
-    "name": "Han Hyeri",
-    "group": "I.B.I"
-  },
-  {
-    "id": 338,
-    "name": "Lee Haein",
-    "group": "I.B.I"
-  },
-  {
-    "id": 339,
-    "name": "Lee Suhyun",
-    "group": "I.B.I"
   },
   {
     "id": 340,
