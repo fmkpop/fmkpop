@@ -17,7 +17,15 @@ export class DashComponent {
   buttonStates: string[] = ['', '', '']
   girls: number[] = []
 
-  uniqueSelections = () => JSON.stringify([...this.buttonStates].sort()) == JSON.stringify(["f", "m", "k"])
+  cards: Observable<Card[]> = forkJoin([{}, {}, {}].map(_ => {
+    const girl = this.randomGirl()
+    this.girls.push(girl.id)
+    return this.getRedditImage(girl).pipe(map(imageUrl => {
+      return { rows: 1, cols: 1, title: girl.name + " - " + girl.group, url: imageUrl } as Card
+    }))
+  }))
+
+  uniqueSelections = () => JSON.stringify([...this.buttonStates].sort()) == "[\"f\",\"k\",\"m\"]"
 
   watch(clicked: string, girl: number) {
     if (this.buttonStates.some(x => x != '')) {
@@ -27,17 +35,15 @@ export class DashComponent {
       }
       this.buttonStates[girl] = clicked
     }
-    if (this.uniqueSelections())
+    if (this.uniqueSelections()) {
+      this.submitResults()
       window.location.reload()
+    }
   }
 
-  cards: Observable<Card[]> = forkJoin([{}, {}, {}].map(_ => {
-    const girl = this.randomGirl()
-    this.girls.push(girl.id)
-    return this.getRedditImage(girl).pipe(map(imageUrl => {
-      return { rows: 1, cols: 1, title: girl.name + " - " + girl.group, url: imageUrl } as Card
-    }))
-  }))
+  submitResults() {
+
+  }
 
   randomGirl(): Girl {
     const rand = Math.floor(Math.random() * 654) + 1

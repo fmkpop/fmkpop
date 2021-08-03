@@ -1,5 +1,5 @@
 <div class="grid-container">
-  {{buttonStates | json}}{{ girls | json }}
+  <!-- {{buttonStates | json}}{{ girls | json }} -->
   <h1>fmkpop</h1>
   <mat-grid-list cols="3">
     <mat-grid-tile *ngFor="let card of cards | async; let i = index">
@@ -9,8 +9,8 @@
             {{card.title}}
           </mat-card-title>
         </mat-card-header>
-        <img *ngIf=!!card.url [attr.src]="card.url | safeResourceUrl" mat-card-image>
-        <p class="nugu" *ngIf=!card.url>nugu alert - submit an image to r/kpics</p>
+        <img *ngIf=!!card.url [src]="card.url | safeResourceUrl" mat-card-image>
+        <p *ngIf=!card.url class="nugu">nugu alert - submit an image to r/kpics</p>
         <mat-card-actions>
           <mat-button-toggle-group [(ngModel)]="buttonStates[i]" (valueChange)="watch($event, i)">
             <mat-button-toggle value='f'>Fuck</mat-button-toggle>
