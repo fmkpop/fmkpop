@@ -325,61 +325,6 @@
     "group": "AREAL"
   },
   {
-    "id": 70,
-    "name": "Dawon",
-    "group": "ARIAZ"
-  },
-  {
-    "id": 71,
-    "name": "Hyogyeong",
-    "group": "ARIAZ"
-  },
-  {
-    "id": 72,
-    "name": "Jueun",
-    "group": "ARIAZ"
-  },
-  {
-    "id": 73,
-    "name": "Sihyeon",
-    "group": "ARIAZ"
-  },
-  {
-    "id": 74,
-    "name": "Yeori",
-    "group": "ARIAZ"
-  },
-  {
-    "id": 75,
-    "name": "Yunji",
-    "group": "ARIAZ"
-  },
-  {
-    "id": 76,
-    "name": "K.Me",
-    "group": "BADKIZ"
-  },
-  {
-    "id": 77,
-    "name": "LuA",
-    "group": "BADKIZ"
-  },
-  {
-    "id": 78,
-    "name": "Monika",
-    "group": "BADKIZ"
-  },
-  {
-    "id": 79,
-    "name": "Somin",
-    "group": "BADKIZ"
-  },
-  {
-    "id": 80,
-    "name": "U-Si",
-    "group": "BADKIZ"
-  },
-  {
     "id": 81,
     "name": "Daye",
     "group": "Berry Good"
@@ -1165,41 +1110,6 @@
     "group": "H.U.B"
   },
   {
-    "id": 300,
-    "name": "Aeji",
-    "group": "Hashtag"
-  },
-  {
-    "id": 301,
-    "name": "Dajeong",
-    "group": "Hashtag"
-  },
-  {
-    "id": 302,
-    "name": "Hyunji",
-    "group": "Hashtag"
-  },
-  {
-    "id": 303,
-    "name": "Seungmin",
-    "group": "Hashtag"
-  },
-  {
-    "id": 304,
-    "name": "Sojin",
-    "group": "Hashtag"
-  },
-  {
-    "id": 305,
-    "name": "Sua",
-    "group": "Hashtag"
-  },
-  {
-    "id": 306,
-    "name": "Subin",
-    "group": "Hashtag"
-  },
-  {
     "id": 307,
     "name": "Alice",
     "group": "Hello Venus"
@@ -1885,91 +1795,6 @@
     "group": "Oh My Girl"
   },
   {
-    "id": 463,
-    "name": "Ahyung",
-    "group": "P.O.P"
-  },
-  {
-    "id": 464,
-    "name": "Haeri",
-    "group": "P.O.P"
-  },
-  {
-    "id": 465,
-    "name": "Miso",
-    "group": "P.O.P"
-  },
-  {
-    "id": 466,
-    "name": "Seol",
-    "group": "P.O.P"
-  },
-  {
-    "id": 467,
-    "name": "Yeonha",
-    "group": "P.O.P"
-  },
-  {
-    "id": 468,
-    "name": "Yeonjoo",
-    "group": "P.O.P"
-  },
-  {
-    "id": 477,
-    "name": "Dajeong",
-    "group": "Pixy"
-  },
-  {
-    "id": 478,
-    "name": "Dia",
-    "group": "Pixy"
-  },
-  {
-    "id": 479,
-    "name": "Ella",
-    "group": "Pixy"
-  },
-  {
-    "id": 480,
-    "name": "Lola",
-    "group": "Pixy"
-  },
-  {
-    "id": 481,
-    "name": "Satbyeol",
-    "group": "Pixy"
-  },
-  {
-    "id": 482,
-    "name": "Sua",
-    "group": "Pixy"
-  },
-  {
-    "id": 488,
-    "name": "EunB",
-    "group": "PRECIOUS"
-  },
-  {
-    "id": 489,
-    "name": "Hanbyul",
-    "group": "PRECIOUS"
-  },
-  {
-    "id": 490,
-    "name": "Hanwoom",
-    "group": "PRECIOUS"
-  },
-  {
-    "id": 491,
-    "name": "Jihyo",
-    "group": "PRECIOUS"
-  },
-  {
-    "id": 492,
-    "name": "Lee Soo",
-    "group": "PRECIOUS"
-  },
-  {
     "id": 493,
     "name": "Kyla",
     "group": "Pristin"
@@ -2173,16 +1998,6 @@
     "id": 538,
     "name": "Han Leeseul",
     "group": "Rockit Girl"
-  },
-  {
-    "id": 539,
-    "name": "Jisun",
-    "group": "S#aFLA"
-  },
-  {
-    "id": 540,
-    "name": "Seulgi",
-    "group": "S#aFLA"
   },
   {
     "id": 543,
@@ -2458,26 +2273,6 @@
     "id": 597,
     "name": "Miso",
     "group": "Tahiti"
-  },
-  {
-    "id": 598,
-    "name": "Dohee",
-    "group": "Tiny-G"
-  },
-  {
-    "id": 599,
-    "name": "J.Min",
-    "group": "Tiny-G"
-  },
-  {
-    "id": 600,
-    "name": "Mint",
-    "group": "Tiny-G"
-  },
-  {
-    "id": 601,
-    "name": "Myungji",
-    "group": "Tiny-G"
   },
   {
     "id": 602,

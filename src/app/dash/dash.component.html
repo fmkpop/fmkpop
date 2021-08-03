@@ -1,27 +1,29 @@
 <div class="grid-container">
   <h1>fmkpop</h1>
-  <mat-grid-list cols="3">
-    <mat-grid-tile *ngFor="let i = index; let card of cards | async">
-      <mat-card class="dashboard-card">
-        <mat-card-header>
-          <mat-card-title>
-            {{card.title}}
-          </mat-card-title>
-        </mat-card-header>
-        <img [attr.src]="card.url | safeResourceUrl" mat-card-image alt="nugu? Check console">
-        <mat-card-actions>
-          <!-- <button formcontrol mat-button [id]="'fuck-'+i">FUCK</button>
+  <form>
+    <mat-grid-list cols="3">
+      <mat-grid-tile *ngFor="let i = index; let card of cards | async">
+        <mat-card class="dashboard-card">
+          <mat-card-header>
+            <mat-card-title>
+              {{card.title}}
+            </mat-card-title>
+          </mat-card-header>
+          <img [attr.src]="card.url | safeResourceUrl" mat-card-image alt="nugu? Check console">
+          <mat-card-actions fxLayout="row" fxLayoutAlign="space-evenly center">
+            <!-- <button formcontrol mat-button [id]="'fuck-'+i">FUCK</button>
           <button formcontrol mat-button [id]="'marry-'+i">MARRY</button>
           <button formcontrol mat-button [id]="'kill-'+i">KILL</button> -->
-          <mat-button-toggle-group>
-            <mat-button-toggle value="fuck">fuck</mat-button-toggle>
-            <mat-button-toggle value="marry">marry</mat-button-toggle>
-            <mat-button-toggle value="kill">kill</mat-button-toggle>
-          </mat-button-toggle-group>
+            <mat-button-toggle-group>
+              <mat-button-toggle value="fuck" (onClick)="clicked()">Fuck</mat-button-toggle>
+              <mat-button-toggle value="marry">Marry</mat-button-toggle>
+              <mat-button-toggle value="kill">Kill</mat-button-toggle>
+            </mat-button-toggle-group>
 
-        </mat-card-actions>
+          </mat-card-actions>
 
-      </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </form>
 </div>

@@ -39,3 +39,20 @@ h1 {
 img {
   margin-bottom: 0;
 }
+
+/* .mat-button-toggle {
+  padding-left: 1.71875vw;
+  padding-right: 1.71875vw;
+} */
+
+mat-button-toggle-group {
+  width: 100%;
+}
+
+mat-button-toggle {
+  flex: 1 1 100%;
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+}

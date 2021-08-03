@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 import { Observable, forkJoin } from 'rxjs';
 import { map } from 'rxjs/operators';
 import data from '../../assets/id_girls.json'
@@ -13,12 +14,18 @@ import { Girl, RedditJson, Card } from '../model';
 export class DashComponent {
   constructor(private http: HttpClient) { }
 
+  form: FormGroup = new FormGroup({})
+
   cards: Observable<Card[]> = forkJoin([{}, {}, {}].map(_ => {
     const girl = this.randomGirl()
     return this.getRedditImage(girl).pipe(map(imageUrl => {
       return { rows: 1, cols: 1, title: girl.name + " - " + girl.group, url: imageUrl } as Card
     }))
   }))
+
+  clicked() {
+
+  }
 
   randomGirl(): Girl {
     const rand = Math.floor(Math.random() * 657)
@@ -28,7 +35,7 @@ export class DashComponent {
   }
 
   redditSearch(girl: Girl) {
-    const g = girl.group.replace(' ', '%2B').replace('IZ*ONE', 'IZ').replace('(G)I-DLE', 'DLE')
+    const g = (girl.group as any).replaceAll(' ', '%2B').replace('IZ*ONE', 'IZ').replace('(G)I-DLE', 'DLE')
     const n = girl.name.replace(' ', '%2B')
     const exclusions = `-site%3Agfycat.com+-site%3Areddit.com+-site%3Av.redd.it+-url%3Agallery`
     return `https://reddit.com/r/kpics/search.json?jsonp=JSONP_CALLBACK&q=flair%3A${g}+${n}+${exclusions}&restrict_sr=on&sort=top&t=all`
