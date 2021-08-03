@@ -46,7 +46,7 @@ export class DashComponent {
   }
 
   randomGirl(): Girl {
-    const rand = Math.floor(Math.random() * 654) + 1
+    const rand = 131// Math.floor(Math.random() * 654) + 1
     const girl = data.find(girl => girl.id === rand) || this.randomGirl()
     console.log(girl)
     return girl
@@ -63,7 +63,7 @@ export class DashComponent {
     const reddit = this.redditSearch(girl)
     console.log(String(reddit).replace('.json', ''))
     return this.http.jsonp<RedditJson>(reddit, '').pipe(map(res => {
-      const rand = Math.floor(Math.random() * res.data?.children.length)
+      const rand = Math.floor(Math.random() * Math.min(5, res.data?.children.length))
       const url = JSON.stringify(res.data?.children[rand]?.data?.url) || ''
       return url.substring(1, url.length - 1)
     }))
