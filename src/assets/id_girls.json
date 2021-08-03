@@ -1505,7 +1505,7 @@
     "group": "Lusty"
   },
   {
-    "id": 406,
+    "id": 0,
     "name": "Jinhui",
     "group": "Lusty"
   },
@@ -1515,7 +1515,7 @@
     "group": "Lusty"
   },
   {
-    "id": 408,
+    "id": 0,
     "name": "Yoonji",
     "group": "Lusty"
   },
@@ -2443,20 +2443,5 @@
     "id": 654,
     "name": "Wooyeon",
     "group": "woo!ah!"
-  },
-  {
-    "id": 655,
-    "name": "Baekah",
-    "group": "XUM"
-  },
-  {
-    "id": 656,
-    "name": "Daeyeon",
-    "group": "XUM"
-  },
-  {
-    "id": 657,
-    "name": "Iaan",
-    "group": "XUM"
   }
 ]

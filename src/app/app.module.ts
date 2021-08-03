@@ -12,6 +12,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { LayoutModule } from '@angular/cdk/layout';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { SafeResourceUrlPipe } from './dash/safeResourceUrlPipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SafeResourceUrlPipe } from './dash/safeResourceUrlPipe';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatCardModule,
     MatGridListModule,
     MatMenuModule,

@@ -38,6 +38,7 @@ img {
 .nugu {
   margin-top: 100px;
   margin-bottom: 100px;
+  text-align: center;
 }
 
 mat-card-actions {
@@ -45,7 +46,7 @@ mat-card-actions {
 }
 
 mat-button-toggle-group {
-  width: 99.5%;
+  width: 99.25%;
 }
 
 mat-button-toggle {
@@ -56,3 +57,6 @@ mat-button-toggle {
   display: flex;
 }
 
+.mat-button-toggle-label-content {
+  font-size: large;
+}
