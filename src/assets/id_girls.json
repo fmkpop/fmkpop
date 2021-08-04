@@ -305,26 +305,6 @@
     "group": "APRIL"
   },
   {
-    "id": 66,
-    "name": "Areum",
-    "group": "AREAL"
-  },
-  {
-    "id": 67,
-    "name": "Dabi",
-    "group": "AREAL"
-  },
-  {
-    "id": 68,
-    "name": "Hyebin",
-    "group": "AREAL"
-  },
-  {
-    "id": 69,
-    "name": "Segye",
-    "group": "AREAL"
-  },
-  {
     "id": 81,
     "name": "Daye",
     "group": "Berry Good"
@@ -588,16 +568,6 @@
     "id": 183,
     "name": "Woohee",
     "group": "Dal Shabet"
-  },
-  {
-    "id": 184,
-    "name": "Haeri",
-    "group": "Davichi"
-  },
-  {
-    "id": 185,
-    "name": "Minkyung",
-    "group": "Davichi"
   },
   {
     "id": 186,
@@ -980,31 +950,6 @@
     "group": "Girl's Day"
   },
   {
-    "id": 274,
-    "name": "Ellyn",
-    "group": "Girlkind"
-  },
-  {
-    "id": 275,
-    "name": "JK",
-    "group": "Girlkind"
-  },
-  {
-    "id": 276,
-    "name": "Medic Jin",
-    "group": "Girlkind"
-  },
-  {
-    "id": 277,
-    "name": "Sun J",
-    "group": "Girlkind"
-  },
-  {
-    "id": 278,
-    "name": "Xeheun",
-    "group": "Girlkind"
-  },
-  {
     "id": 279,
     "name": "Heejin",
     "group": "Good Day"
@@ -1085,31 +1030,6 @@
     "group": "GWSN"
   },
   {
-    "id": 295,
-    "name": "Gracie",
-    "group": "H.U.B"
-  },
-  {
-    "id": 296,
-    "name": "Hyosun",
-    "group": "H.U.B"
-  },
-  {
-    "id": 297,
-    "name": "Keina",
-    "group": "H.U.B"
-  },
-  {
-    "id": 298,
-    "name": "Rui",
-    "group": "H.U.B"
-  },
-  {
-    "id": 299,
-    "name": "Yuem",
-    "group": "H.U.B"
-  },
-  {
     "id": 307,
     "name": "Alice",
     "group": "Hello Venus"
@@ -1158,31 +1078,6 @@
     "id": 316,
     "name": "Sea",
     "group": "Highteen"
-  },
-  {
-    "id": 317,
-    "name": "Bada",
-    "group": "Hinapia"
-  },
-  {
-    "id": 318,
-    "name": "Eunwoo",
-    "group": "Hinapia"
-  },
-  {
-    "id": 319,
-    "name": "Rena",
-    "group": "Hinapia"
-  },
-  {
-    "id": 320,
-    "name": "Roa",
-    "group": "Hinapia"
-  },
-  {
-    "id": 321,
-    "name": "Yuha",
-    "group": "Hinapia"
   },
   {
     "id": 340,
@@ -1495,31 +1390,6 @@
     "group": "LUNARSOLAR"
   },
   {
-    "id": 404,
-    "name": "Harin",
-    "group": "Lusty"
-  },
-  {
-    "id": 405,
-    "name": "Isol",
-    "group": "Lusty"
-  },
-  {
-    "id": 0,
-    "name": "Jinhui",
-    "group": "Lusty"
-  },
-  {
-    "id": 407,
-    "name": "Yeryung",
-    "group": "Lusty"
-  },
-  {
-    "id": 0,
-    "name": "Yoonji",
-    "group": "Lusty"
-  },
-  {
     "id": 409,
     "name": "Aki",
     "group": "MAJORS"
@@ -1568,26 +1438,6 @@
     "id": 423,
     "name": "Wheein",
     "group": "Mamamoo"
-  },
-  {
-    "id": 424,
-    "name": "Dan-a",
-    "group": "Matilda"
-  },
-  {
-    "id": 425,
-    "name": "Haena",
-    "group": "Matilda"
-  },
-  {
-    "id": 426,
-    "name": "Saebyeol",
-    "group": "Matilda"
-  },
-  {
-    "id": 427,
-    "name": "Semmi",
-    "group": "Matilda"
   },
   {
     "id": 432,
@@ -1657,7 +1507,7 @@
   {
     "id": 450,
     "name": "Loha",
-    "group": "Nature"
+    "group": "NATURE"
   },
   {
     "id": 451,
@@ -2070,16 +1920,6 @@
     "group": "Sonamoo"
   },
   {
-    "id": 575,
-    "name": "Narae",
-    "group": "SPICA"
-  },
-  {
-    "id": 576,
-    "name": "Sihyun",
-    "group": "SPICA"
-  },
-  {
     "id": 577,
     "name": "Isa",
     "group": "STAYC"
@@ -2158,31 +1998,6 @@
     "id": 592,
     "name": "Soyeon",
     "group": "T-ara"
-  },
-  {
-    "id": 593,
-    "name": "Ari",
-    "group": "Tahiti"
-  },
-  {
-    "id": 594,
-    "name": "Jerrry",
-    "group": "Tahiti"
-  },
-  {
-    "id": 595,
-    "name": "Jisoo",
-    "group": "Tahiti"
-  },
-  {
-    "id": 596,
-    "name": "Minjae",
-    "group": "Tahiti"
-  },
-  {
-    "id": 597,
-    "name": "Miso",
-    "group": "Tahiti"
   },
   {
     "id": 602,
