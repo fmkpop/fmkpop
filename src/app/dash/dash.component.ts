@@ -42,14 +42,16 @@ export class DashComponent {
   }
 
   submitResults() {
+    this.http.post(``, {})
+  }
 
+  randId(): number {
+    const rand = Math.floor(Math.random() * 654) + 1
+    return this.girls.some(g => g === rand) ? this.randId() : rand
   }
 
   randomGirl(): Girl {
-    // const favs: number[] = [131, 388, 344, 456, 462, 522, 521, 353, 163, 209, 637]
-    // const rand = favs[Math.floor(Math.random() * 10)] 
-    const rand = Math.floor(Math.random() * 654) + 1
-    const girl = data.find(girl => girl.id === rand) || this.randomGirl()
+    const girl = data.find(girl => girl.id === this.randId()) || this.randomGirl()
     console.log(girl)
     return girl
   }

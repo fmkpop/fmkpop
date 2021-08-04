@@ -40,26 +40,6 @@
     "group": "15&"
   },
   {
-    "id": 9,
-    "name": "Daeun",
-    "group": "2EYES"
-  },
-  {
-    "id": 10,
-    "name": "Dasom",
-    "group": "2EYES"
-  },
-  {
-    "id": 11,
-    "name": "Hyangsuk",
-    "group": "2EYES"
-  },
-  {
-    "id": 12,
-    "name": "Hyerin",
-    "group": "2EYES"
-  },
-  {
     "id": 13,
     "name": "Bom",
     "group": "2NE1"
@@ -80,22 +60,7 @@
     "group": "2NE1"
   },
   {
-    "id": 17,
-    "name": "Haeun",
-    "group": "3YE"
-  },
-  {
-    "id": 18,
-    "name": "Yuji",
-    "group": "3YE"
-  },
-  {
-    "id": 19,
-    "name": "Yurim",
-    "group": "3YE"
-  },
-  {
-    "id": 20,
+    "id": 0,
     "name": "Gayoon",
     "group": "4minute"
   },
@@ -105,17 +70,17 @@
     "group": "4minute"
   },
   {
-    "id": 22,
+    "id": 0,
     "name": "Jihyun",
     "group": "4minute"
   },
   {
-    "id": 23,
+    "id": 0,
     "name": "Jiyoon",
     "group": "4minute"
   },
   {
-    "id": 24,
+    "id": 0,
     "name": "Sohyun",
     "group": "4minute"
   },

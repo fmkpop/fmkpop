@@ -1,5 +1,4 @@
 <div class="grid-container">
-  <!-- {{buttonStates | json}}{{ girls | json }} -->
   <h1>fmkpop</h1>
   <mat-grid-list cols="3">
     <mat-grid-tile *ngFor="let card of cards | async; let i = index">
@@ -18,10 +17,7 @@
             <mat-button-toggle value='k'>Kill</mat-button-toggle>
           </mat-button-toggle-group>
         </mat-card-actions>
-
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
-
-
 </div>
