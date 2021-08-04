@@ -46,7 +46,9 @@ export class DashComponent {
   }
 
   randomGirl(): Girl {
-    const rand = 131// Math.floor(Math.random() * 654) + 1
+    // const favs: number[] = [131, 388, 344, 456, 462, 522, 521, 353, 163, 209, 637]
+    // const rand = favs[Math.floor(Math.random() * 10)] 
+    const rand = Math.floor(Math.random() * 654) + 1
     const girl = data.find(girl => girl.id === rand) || this.randomGirl()
     console.log(girl)
     return girl
