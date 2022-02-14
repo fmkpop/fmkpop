@@ -15,11 +15,11 @@ export class DashComponent {
   constructor(private http: HttpClient) { }
 
   buttonStates: string[] = ['', '', '']
-  girls: number[] = []
+  girls: Girl[] = []
 
   cards: Observable<Card[]> = forkJoin([{}, {}, {}].map(_ => {
     const girl = this.randomGirl()
-    this.girls.push(girl.id)
+    this.girls.push(girl)
     return this.getRedditImage(girl).pipe(map(imageUrl => {
       return { rows: 1, cols: 1, title: girl.name + " - " + girl.group, url: imageUrl } as Card
     }))
@@ -37,19 +37,20 @@ export class DashComponent {
     }
     if (this.uniqueSelections()) {
       this.submitResults()
-      window.location.reload()
     }
   }
 
   submitResults() {
-    const body = {}
-
-    // this.http.post(``, )
+    const time = new Date().toISOString()
+    const girlVotes = this.girls.map((g, i) => { return { ...g, vote: this.buttonStates[i] } })
+    const body = { [time]: girlVotes }
+    const url = `https://getpantry.cloud/apiv1/pantry/b79d34bf-9370-43fc-b088-d2ba6e5588e6/basket/girls`
+    this.http.put(url, body).subscribe(success => window.location.reload(), error => window.location.reload())
   }
 
   randId(): number {
-    const rand = Math.floor(Math.random() * 654) + 1
-    return this.girls.some(g => g === rand) ? this.randId() : rand
+    const rand = Math.floor(Math.random() * 655) + 1
+    return this.girls.some(g => g.id === rand) ? this.randId() : rand
   }
 
   randomGirl(): Girl {
