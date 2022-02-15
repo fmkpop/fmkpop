@@ -4,6 +4,20 @@ export interface Girl {
   group: string
 }
 
+export interface GirlVote {
+  id: number,
+  name: string,
+  group: string
+  vote: string
+}
+
+export interface VoteData {
+  f: number
+  m: number
+  k: number
+  g: string
+}
+
 export interface Card {
   rows: number,
   cols: number,
