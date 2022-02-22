@@ -735,12 +735,12 @@
     "group": "f(x)"
   },
   {
-    "id": 226,
+    "id": 0,
     "name": "Chaelin",
     "group": "FANATICS"
   },
   {
-    "id": 227,
+    "id": 0,
     "name": "Chiayi",
     "group": "FANATICS"
   },
@@ -750,17 +750,17 @@
     "group": "FANATICS"
   },
   {
-    "id": 229,
+    "id": 0,
     "name": "Doi",
     "group": "FANATICS"
   },
   {
-    "id": 230,
+    "id": 0,
     "name": "Sika",
     "group": "FANATICS"
   },
   {
-    "id": 231,
+    "id": 0,
     "name": "Yoonhye",
     "group": "FANATICS"
   },
@@ -2193,5 +2193,75 @@
     "id": 655,
     "name": "Leeseo",
     "group": "IVE"
+  },
+  {
+    "id": 656,
+    "name": "Liz",
+    "group": "IVE"
+  },
+  {
+    "id": 657,
+    "name": "Gaeul",
+    "group": "IVE"
+  },
+  {
+    "id": 658,
+    "name": "Rei",
+    "group": "IVE"
+  },
+  {
+    "id": 659,
+    "name": "Dayeon",
+    "group": "Kep1er"
+  },
+  {
+    "id": 660,
+    "name": "Hikaru",
+    "group": "Kep1er"
+  },
+  {
+    "id": 661,
+    "name": "Bahiyyih",
+    "group": "Kep1er"
+  },
+  {
+    "id": 662,
+    "name": "Youngeun",
+    "group": "Kep1er"
+  },
+  {
+    "id": 663,
+    "name": "Mashiro",
+    "group": "Kep1er"
+  },
+  {
+    "id": 664,
+    "name": "Xiaoting",
+    "group": "Kep1er"
+  },
+  {
+    "id": 665,
+    "name": "Chaehyun",
+    "group": "Kep1er"
+  },
+  {
+    "id": 353,
+    "name": "Wonyoung",
+    "group": "IVE"
+  },
+  {
+    "id": 355,
+    "name": "Yujin",
+    "group": "IVE"
+  },
+  {
+    "id": 156,
+    "name": "Yujin",
+    "group": "Kep1er"
+  },
+  {
+    "id": 131,
+    "name": "Yeseo",
+    "group": "Kep1er"
   }
 ]
