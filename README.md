@@ -6,6 +6,7 @@
 ### Todo
 - refactor into seperate components
 - add image fetch retry on fail
+- add fixed image height + scaled images
 - nugu purge
 - change selection colours to reflect choice
 - add bar chart displaying results after voting
