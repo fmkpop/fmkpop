@@ -31,7 +31,6 @@ export class DashComponent implements OnInit {
 
   ngOnInit() {
     this.readNetworkStorage().subscribe(data => this.data = data)
-    this.readLocalStorage()
   }
 
   uniqueSelections = () => JSON.stringify([...this.buttonStates].sort()) == "[\"f\",\"k\",\"m\"]"
@@ -95,7 +94,7 @@ export class DashComponent implements OnInit {
   }
 
   randId(): number {
-    const rand = Math.floor(Math.random() * 665) + 1
+    const rand = Math.floor(Math.random() * 676) + 1
     return this.girls.some(g => g.id === rand) ? this.randId() : rand
   }
 
@@ -115,7 +114,7 @@ export class DashComponent implements OnInit {
     const reddit = this.redditSearch(girl)
     console.log(String(reddit).replace('.json', ''))
     return this.http.jsonp<RedditJson>(reddit, '').pipe(map(res => {
-      const rand = Math.floor(Math.random() * Math.min(5, res.data?.children.length))
+      const rand = Math.floor(Math.random() * Math.min(10, res.data?.children.length))
       const url = JSON.stringify(res.data?.children[rand]?.data?.url) || ''
       return url.substring(1, url.length - 1)
     }))
