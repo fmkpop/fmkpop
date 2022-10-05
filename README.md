@@ -12,4 +12,4 @@
 - add bar chart displaying results after voting
 - add next button
 - add girls leaderboard
-- filter for portrait images only
+- filter for portrait images only 
