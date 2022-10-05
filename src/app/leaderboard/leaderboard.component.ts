@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import _ from 'lodash';
@@ -20,20 +20,17 @@ interface GirlTable {
   templateUrl: './leaderboard.component.html',
   styleUrls: ['./leaderboard.component.css']
 })
-export class LeaderboardComponent implements AfterViewInit {
+export class LeaderboardComponent implements OnInit {
 
-  constructor(
-    private http: HttpClient
-  ) { }
+  constructor(private http: HttpClient) { }
 
-  @ViewChild(MatSort, { static: false }) sort = new MatSort();
-  displayedColumns = ["name", "f", "m", "k"];
-
+  @ViewChild(MatSort, { static: false }) sort!: MatSort
+  displayedColumns = ["id", "name", "group", "f", "m", "k"];
 
   url = `https://getpantry.cloud/apiv1/pantry/b79d34bf-9370-43fc-b088-d2ba6e5588e6/basket/girls`
   dataSource = new MatTableDataSource<GirlTable>([])
 
-  ngAfterViewInit(): void {
+  ngOnInit(): void {
     this.readNetworkStorage().subscribe(girls => {
       this.dataSource.data = girls
       this.dataSource.sort = this.sort

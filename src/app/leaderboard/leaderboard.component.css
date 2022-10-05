@@ -6,3 +6,11 @@
 mat-header-cell {
   font-size: medium;
 }
+
+.mono {
+  font-family: monospace;
+}
+
+mat-cell {
+  text-align: center;
+}
