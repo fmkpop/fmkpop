@@ -1,0 +1,24 @@
+<div class="mat-elevation-z2">
+  <mat-table class="table-container" #table [dataSource]="dataSource" matSort>
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>name (group)</mat-header-cell>
+      <mat-cell *matCellDef="let girl"> {{girl.name + " (" + girl.group + ")"}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="f">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>fucked</mat-header-cell>
+      <mat-cell *matCellDef="let girl"> {{girl.f}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="m">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>married</mat-header-cell>
+      <mat-cell *matCellDef="let girl"> {{girl.m}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="k">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>killed</mat-header-cell>
+      <mat-cell *matCellDef="let girl"> {{girl.k}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>

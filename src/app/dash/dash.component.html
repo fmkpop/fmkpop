@@ -1,23 +1,20 @@
-<div class="grid-container">
-  <h1>fmkpop</h1>
-  <mat-grid-list cols="3">
-    <mat-grid-tile *ngFor="let card of cards | async; let i = index">
-      <mat-card class="dashboard-card">
-        <mat-card-header>
-          <mat-card-title>
-            {{card.title}}
-          </mat-card-title>
-        </mat-card-header>
-        <img *ngIf=!!card.url [src]="card.url | safeResourceUrl" mat-card-image>
-        <p *ngIf=!card.url class="nugu">nugu alert - submit an image to r/kpics</p>
-        <mat-card-actions>
-          <mat-button-toggle-group [(ngModel)]="buttonStates[i]" (valueChange)="watch($event, i)">
-            <mat-button-toggle value='f'>Fuck</mat-button-toggle>
-            <mat-button-toggle value='m'>Marry</mat-button-toggle>
-            <mat-button-toggle value='k'>Kill</mat-button-toggle>
-          </mat-button-toggle-group>
-        </mat-card-actions>
-      </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
-</div>
+<mat-grid-list cols="3">
+  <mat-grid-tile *ngFor="let card of cards | async; let i = index">
+    <mat-card class="dashboard-card">
+      <mat-card-header>
+        <mat-card-title>
+          {{card.title}}
+        </mat-card-title>
+      </mat-card-header>
+      <img *ngIf=!!card.url [src]="card.url | safeResourceUrl" mat-card-image>
+      <p *ngIf=!card.url class="nugu">nugu alert - submit an image to r/kpics</p>
+      <mat-card-actions>
+        <mat-button-toggle-group [(ngModel)]="buttonStates[i]" (valueChange)="watch($event, i)">
+          <mat-button-toggle value='f'>Fuck</mat-button-toggle>
+          <mat-button-toggle value='m'>Marry</mat-button-toggle>
+          <mat-button-toggle value='k'>Kill</mat-button-toggle>
+        </mat-button-toggle-group>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

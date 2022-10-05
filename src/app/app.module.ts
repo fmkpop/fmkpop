@@ -13,12 +13,20 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { SafeResourceUrlPipe } from './dash/safeResourceUrlPipe';
 import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     DashComponent,
-    SafeResourceUrlPipe
+    SafeResourceUrlPipe,
+    LeaderboardComponent
   ],
   imports: [
     BrowserModule,
@@ -27,12 +35,17 @@ import { FormsModule } from '@angular/forms';
     MatCardModule,
     MatGridListModule,
     MatMenuModule,
+    MatListModule,
     MatIconModule,
     MatButtonModule,
     MatButtonToggleModule,
     LayoutModule,
     HttpClientModule,
     HttpClientJsonpModule,
+    AppRoutingModule,
+    RouterModule,
+    CommonModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent],

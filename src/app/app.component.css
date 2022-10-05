@@ -1,0 +1,14 @@
+.grid-container {
+  margin: auto;
+  max-width: 70%;
+}
+
+.left {
+  padding-left: 32px;
+  text-align: left;
+}
+
+.right {
+  padding-right: 32px;
+  text-align: right;
+}

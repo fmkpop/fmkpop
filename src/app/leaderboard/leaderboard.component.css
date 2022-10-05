@@ -1,0 +1,8 @@
+.table-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+mat-header-cell {
+  font-size: medium;
+}
