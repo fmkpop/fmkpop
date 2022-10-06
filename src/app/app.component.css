@@ -4,12 +4,14 @@
 }
 
 .left {
+  cursor: pointer;
   width: 100%;
   padding-left: 32px;
   text-align: left;
 }
 
 .right {
+  cursor: pointer;
   width: 100%;
   padding-right: 32px;
   text-align: right;

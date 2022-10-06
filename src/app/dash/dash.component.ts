@@ -6,6 +6,7 @@ import { map } from 'rxjs/operators';
 import data from '../../assets/id_girls.json'
 import { Girl, RedditJson, Card, GirlVote, VoteData } from '../model';
 import _ from 'lodash';
+import { PantryService } from '../pantry.service';
 
 @Component({
   selector: 'app-dash',
@@ -13,7 +14,7 @@ import _ from 'lodash';
   styleUrls: ['./dash.component.css']
 })
 export class DashComponent implements OnInit {
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private ps: PantryService) { }
 
   url = `https://getpantry.cloud/apiv1/pantry/b79d34bf-9370-43fc-b088-d2ba6e5588e6/basket/girls`
   buttonStates: string[] = ['', '', '']
@@ -24,7 +25,7 @@ export class DashComponent implements OnInit {
   cards: Observable<Card[]> = forkJoin([{}, {}, {}].map(_ => {
     const girl = this.randomGirl()
     this.girls.push(girl)
-    return this.getRedditImage(girl).pipe(map(imageUrl => {
+    return this.ps.getRedditImage(girl).pipe(map(imageUrl => {
       return { rows: 1, cols: 1, title: girl.name + " - " + girl.group, url: imageUrl } as Card
     }))
   }))
@@ -101,22 +102,5 @@ export class DashComponent implements OnInit {
   randomGirl(): Girl {
     const girl = data.find(girl => girl.id === this.randId()) || this.randomGirl()
     return girl
-  }
-
-  redditSearch(girl: Girl) {
-    const g = (girl.group as any).replaceAll(' ', '%2B').replace('IZ*ONE', 'IZ').replace('(G)I-DLE', 'DLE')
-    const n = girl.name.replace(' ', '%2B')
-    const exclusions = `-site%3Agfycat.com+-site%3Av.redd.it+-site%3Ainstagram.com+-site%3Astreamable.com+-url%3Agallery+-url%3A%2F%2Fa%2F%2F+-url%3Ajpg%3Aorig`
-    return `https://reddit.com/r/kpics/search.json?jsonp=JSONP_CALLBACK&q=flair%3A${g}+${n}+${exclusions}&restrict_sr=on&sort=top&t=all`
-  }
-
-  getRedditImage(girl: Girl): Observable<string> {
-    const reddit = this.redditSearch(girl)
-    console.log(String(reddit).replace('.json', ''))
-    return this.http.jsonp<RedditJson>(reddit, '').pipe(map(res => {
-      const rand = Math.floor(Math.random() * Math.min(10, res.data?.children.length))
-      const url = JSON.stringify(res.data?.children[rand]?.data?.url) || ''
-      return url.substring(1, url.length - 1)
-    }))
   }
 }

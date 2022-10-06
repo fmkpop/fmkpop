@@ -1,12 +1,12 @@
 <mat-grid-list cols="3">
   <mat-grid-tile *ngFor="let card of cards | async; let i = index">
-    <mat-card class="dashboard-card">
+    <mat-card class="dashboard-card mat-elevation-z2">
       <mat-card-header>
         <mat-card-title>
           {{card.title}}
         </mat-card-title>
       </mat-card-header>
-      <img *ngIf=!!card.url [src]="card.url | safeResourceUrl" mat-card-image>
+      <img *ngIf=!!card.url [src]="card.url" mat-card-image>
       <p *ngIf=!card.url class="nugu">nugu alert - submit an image to r/kpics</p>
       <mat-card-actions>
         <mat-button-toggle-group [(ngModel)]="buttonStates[i]" (valueChange)="watch($event, i)">

@@ -4,10 +4,6 @@
   height: 85vh;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 mat-header-cell {
   font-size: medium;
 }
@@ -17,6 +13,6 @@ mat-header-cell {
 }
 
 .mat-row:hover {
-  background-color: #e5e5e5;
+  background-color: #f3f3f3;
   cursor: pointer;
 }

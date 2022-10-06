@@ -11,7 +11,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { LayoutModule } from '@angular/cdk/layout';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
-import { SafeResourceUrlPipe } from './dash/safeResourceUrlPipe';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
@@ -20,12 +19,14 @@ import { CommonModule } from '@angular/common';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     DashComponent,
-    SafeResourceUrlPipe,
+
     LeaderboardComponent
   ],
   imports: [
@@ -46,10 +47,11 @@ import { MatSortModule } from '@angular/material/sort';
     RouterModule,
     CommonModule,
     MatTableModule,
-    MatSortModule
+    MatSortModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [SafeResourceUrlPipe]
+  exports: []
 })
 export class AppModule { }
