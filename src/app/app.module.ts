@@ -21,7 +21,6 @@ import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 
-
 @NgModule({
   declarations: [
     AppComponent,

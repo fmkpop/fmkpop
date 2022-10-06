@@ -18,6 +18,15 @@ export interface VoteData {
   g: string
 }
 
+export interface GirlTable {
+  id?: number;
+  name: string;
+  group?: string;
+  f: number;
+  m: number;
+  k: number;
+}
+
 export interface Card {
   rows: number,
   cols: number,

@@ -1,6 +1,11 @@
 .table-container {
   margin-top: 20px;
-  margin-bottom: 20px;
+  overflow: auto;
+  height: 80vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 mat-header-cell {
@@ -9,8 +14,4 @@ mat-header-cell {
 
 .mono {
   font-family: monospace;
-}
-
-mat-cell {
-  text-align: center;
 }
