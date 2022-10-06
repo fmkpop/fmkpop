@@ -33,8 +33,8 @@ export class LeaderboardComponent implements OnInit {
     })
   }
 
-  test(event: any) {
-    console.log(event)
+  showModal(row: any) {
+    console.log(row)
   }
 
 

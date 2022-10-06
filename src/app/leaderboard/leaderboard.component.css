@@ -1,7 +1,7 @@
 .table-container {
   margin-top: 20px;
   overflow: auto;
-  height: 80vh;
+  height: 85vh;
 }
 
 ::-webkit-scrollbar {
@@ -14,4 +14,9 @@ mat-header-cell {
 
 .mono {
   font-family: monospace;
+}
+
+.mat-row:hover {
+  background-color: #e5e5e5;
+  cursor: pointer;
 }
