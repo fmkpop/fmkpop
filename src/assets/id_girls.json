@@ -50,89 +50,9 @@
     "group": "(G)I-DLE"
   },
   {
-    "id": 0,
-    "name": "Yuqi",
-    "group": "(G)I-DLE"
-  },
-  {
-    "id": 0,
-    "name": "Jamie",
-    "group": "15&"
-  },
-  {
-    "id": 0,
-    "name": "Yerin",
-    "group": "15&"
-  },
-  {
-    "id": 0,
-    "name": "Bom",
-    "group": "2NE1"
-  },
-  {
-    "id": 0,
-    "name": "CL",
-    "group": "2NE1"
-  },
-  {
-    "id": 0,
-    "name": "Dara",
-    "group": "2NE1"
-  },
-  {
-    "id": 0,
-    "name": "Minzy",
-    "group": "2NE1"
-  },
-  {
-    "id": 0,
-    "name": "Gayoon",
-    "group": "4minute"
-  },
-  {
     "id": 21,
     "name": "Hyuna",
     "group": "4minute"
-  },
-  {
-    "id": 0,
-    "name": "Jihyun",
-    "group": "4minute"
-  },
-  {
-    "id": 0,
-    "name": "Jiyoon",
-    "group": "4minute"
-  },
-  {
-    "id": 0,
-    "name": "Sohyun",
-    "group": "4minute"
-  },
-  {
-    "id": 0,
-    "name": "Hyemi",
-    "group": "9Muses"
-  },
-  {
-    "id": 0,
-    "name": "Keumjo",
-    "group": "9Muses"
-  },
-  {
-    "id": 0,
-    "name": "Kyungri",
-    "group": "9Muses"
-  },
-  {
-    "id": 0,
-    "name": "Sojin",
-    "group": "9Muses"
-  },
-  {
-    "id": 0,
-    "name": "Sungah",
-    "group": "9Muses"
   },
   {
     "id": 34,
@@ -148,81 +68,6 @@
     "id": 36,
     "name": "Ningning",
     "group": "aespa"
-  },
-  {
-    "id": 37,
-    "name": "Winter",
-    "group": "aespa"
-  },
-  {
-    "id": 0,
-    "name": "E-Young",
-    "group": "After School"
-  },
-  {
-    "id": 0,
-    "name": "Kaeun",
-    "group": "After School"
-  },
-  {
-    "id": 0,
-    "name": "Lizzy",
-    "group": "After School"
-  },
-  {
-    "id": 0,
-    "name": "Nana",
-    "group": "After School"
-  },
-  {
-    "id": 0,
-    "name": "Raina",
-    "group": "After School"
-  },
-  {
-    "id": 0,
-    "name": "Dalyn",
-    "group": "ANS"
-  },
-  {
-    "id": 0,
-    "name": "Dami",
-    "group": "ANS"
-  },
-  {
-    "id": 0,
-    "name": "Haena",
-    "group": "ANS"
-  },
-  {
-    "id": 0,
-    "name": "J",
-    "group": "ANS"
-  },
-  {
-    "id": 0,
-    "name": "Lina",
-    "group": "ANS"
-  },
-  {
-    "id": 0,
-    "name": "Raon",
-    "group": "ANS"
-  },
-  {
-    "id": 0,
-    "name": "Raon",
-    "group": "ANS"
-  },
-  {
-    "id": 0,
-    "name": "Chanmi",
-    "group": "AoA"
-  },
-  {
-    "id": 0,
-    "name": "Hyejeong",
-    "group": "AoA"
   },
   {
     "id": 52,
@@ -300,34 +145,9 @@
     "group": "Berry Good"
   },
   {
-    "id": 0,
-    "name": "Gowoon",
-    "group": "Berry Good"
-  },
-  {
     "id": 83,
     "name": "Johyun",
     "group": "Berry Good"
-  },
-  {
-    "id": 0,
-    "name": "Sehyung",
-    "group": "Berry Good"
-  },
-  {
-    "id": 0,
-    "name": "Seoyul",
-    "group": "Berry Good"
-  },
-  {
-    "id": 0,
-    "name": "Haeryeong",
-    "group": "BESTie"
-  },
-  {
-    "id": 0,
-    "name": "Hyeyeon",
-    "group": "BESTie"
   },
   {
     "id": 88,
@@ -387,11 +207,6 @@
   {
     "id": 130,
     "name": "Minji",
-    "group": "Busters"
-  },
-  {
-    "id": 0,
-    "name": "Yeseo",
     "group": "Busters"
   },
   {
@@ -630,36 +445,6 @@
     "group": "Dreamcatcher"
   },
   {
-    "id": 0,
-    "name": "Boni",
-    "group": "Dreamnote"
-  },
-  {
-    "id": 0,
-    "name": "Eunjo",
-    "group": "Dreamnote"
-  },
-  {
-    "id": 0,
-    "name": "Lara",
-    "group": "Dreamnote"
-  },
-  {
-    "id": 0,
-    "name": "Miso",
-    "group": "Dreamnote"
-  },
-  {
-    "id": 0,
-    "name": "Sumin",
-    "group": "Dreamnote"
-  },
-  {
-    "id": 0,
-    "name": "Youi",
-    "group": "Dreamnote"
-  },
-  {
     "id": 206,
     "name": "Bella",
     "group": "ELRIS"
@@ -740,84 +525,9 @@
     "group": "EXID"
   },
   {
-    "id": 222,
-    "name": "Amber",
-    "group": "f(x)"
-  },
-  {
-    "id": 223,
-    "name": "Krystal",
-    "group": "f(x)"
-  },
-  {
-    "id": 224,
-    "name": "Luna",
-    "group": "f(x)"
-  },
-  {
-    "id": 225,
-    "name": "Victoria",
-    "group": "f(x)"
-  },
-  {
-    "id": 0,
-    "name": "Chaelin",
-    "group": "FANATICS"
-  },
-  {
-    "id": 0,
-    "name": "Chiayi",
-    "group": "FANATICS"
-  },
-  {
     "id": 228,
     "name": "Doah",
     "group": "FANATICS"
-  },
-  {
-    "id": 0,
-    "name": "Doi",
-    "group": "FANATICS"
-  },
-  {
-    "id": 0,
-    "name": "Sika",
-    "group": "FANATICS"
-  },
-  {
-    "id": 0,
-    "name": "Yoonhye",
-    "group": "FANATICS"
-  },
-  {
-    "id": 0,
-    "name": "Ahra",
-    "group": "Favorite"
-  },
-  {
-    "id": 0,
-    "name": "Gaeul",
-    "group": "Favorite"
-  },
-  {
-    "id": 0,
-    "name": "Jeonghee",
-    "group": "Favorite"
-  },
-  {
-    "id": 0,
-    "name": "Saebom",
-    "group": "Favorite"
-  },
-  {
-    "id": 0,
-    "name": "Seoyeon",
-    "group": "Favorite"
-  },
-  {
-    "id": 0,
-    "name": "Sugyeong",
-    "group": "Favorite"
   },
   {
     "id": 238,
@@ -940,11 +650,6 @@
     "group": "Girl's Day"
   },
   {
-    "id": 0,
-    "name": "Heejin",
-    "group": "Good Day"
-  },
-  {
     "id": 280,
     "name": "Haebin",
     "group": "Gugudan"
@@ -985,41 +690,6 @@
     "group": "Gugudan"
   },
   {
-    "id": 288,
-    "name": "Anne",
-    "group": "GWSN"
-  },
-  {
-    "id": 289,
-    "name": "Lena",
-    "group": "GWSN"
-  },
-  {
-    "id": 290,
-    "name": "Minju",
-    "group": "GWSN"
-  },
-  {
-    "id": 291,
-    "name": "Miya",
-    "group": "GWSN"
-  },
-  {
-    "id": 292,
-    "name": "Seokyoung",
-    "group": "GWSN"
-  },
-  {
-    "id": 293,
-    "name": "Seoryoung",
-    "group": "GWSN"
-  },
-  {
-    "id": 294,
-    "name": "Soso",
-    "group": "GWSN"
-  },
-  {
     "id": 307,
     "name": "Alice",
     "group": "Hello Venus"
@@ -1048,26 +718,6 @@
     "id": 312,
     "name": "Yooyoung",
     "group": "Hello Venus"
-  },
-  {
-    "id": 0,
-    "name": "Eunjin",
-    "group": "Highteen"
-  },
-  {
-    "id": 0,
-    "name": "Hyebin",
-    "group": "Highteen"
-  },
-  {
-    "id": 0,
-    "name": "Hyejoo",
-    "group": "Highteen"
-  },
-  {
-    "id": 0,
-    "name": "Sea",
-    "group": "Highteen"
   },
   {
     "id": 340,
@@ -1178,46 +828,6 @@
     "id": 361,
     "name": "Somin",
     "group": "KARD"
-  },
-  {
-    "id": 0,
-    "name": "Haein",
-    "group": "LABOUM"
-  },
-  {
-    "id": 0,
-    "name": "Solbin",
-    "group": "LABOUM"
-  },
-  {
-    "id": 0,
-    "name": "Soyeon",
-    "group": "LABOUM"
-  },
-  {
-    "id": 0,
-    "name": "Yujeong",
-    "group": "LABOUM"
-  },
-  {
-    "id": 0,
-    "name": "ZN",
-    "group": "LABOUM"
-  },
-  {
-    "id": 369,
-    "name": "Ashley",
-    "group": "Ladies Code"
-  },
-  {
-    "id": 370,
-    "name": "Sojung",
-    "group": "Ladies Code"
-  },
-  {
-    "id": 371,
-    "name": "Zuny",
-    "group": "Ladies Code"
   },
   {
     "id": 372,
@@ -1380,36 +990,6 @@
     "group": "LUNARSOLAR"
   },
   {
-    "id": 0,
-    "name": "Aki",
-    "group": "MAJORS"
-  },
-  {
-    "id": 0,
-    "name": "Bian",
-    "group": "MAJORS"
-  },
-  {
-    "id": 0,
-    "name": "Ida",
-    "group": "MAJORS"
-  },
-  {
-    "id": 0,
-    "name": "Shinye",
-    "group": "MAJORS"
-  },
-  {
-    "id": 0,
-    "name": "Suzy",
-    "group": "MAJORS"
-  },
-  {
-    "id": 0,
-    "name": "Vita",
-    "group": "MAJORS"
-  },
-  {
     "id": 420,
     "name": "Hwasa",
     "group": "Mamamoo"
@@ -1428,26 +1008,6 @@
     "id": 423,
     "name": "Wheein",
     "group": "Mamamoo"
-  },
-  {
-    "id": 432,
-    "name": "Fei",
-    "group": "miss A"
-  },
-  {
-    "id": 433,
-    "name": "Jia",
-    "group": "miss A"
-  },
-  {
-    "id": 434,
-    "name": "Min",
-    "group": "miss A"
-  },
-  {
-    "id": 435,
-    "name": "Suzy",
-    "group": "miss A"
   },
   {
     "id": 441,
@@ -1478,51 +1038,6 @@
     "id": 446,
     "name": "Nayun",
     "group": "MOMOLAND"
-  },
-  {
-    "id": 447,
-    "name": "Aurora",
-    "group": "NATURE"
-  },
-  {
-    "id": 448,
-    "name": "Chaebin",
-    "group": "NATURE"
-  },
-  {
-    "id": 449,
-    "name": "Haru",
-    "group": "NATURE"
-  },
-  {
-    "id": 450,
-    "name": "Loha",
-    "group": "NATURE"
-  },
-  {
-    "id": 451,
-    "name": "Lu",
-    "group": "NATURE"
-  },
-  {
-    "id": 452,
-    "name": "Saebom",
-    "group": "NATURE"
-  },
-  {
-    "id": 453,
-    "name": "Sohee",
-    "group": "Nature"
-  },
-  {
-    "id": 454,
-    "name": "Sunshine",
-    "group": "NATURE"
-  },
-  {
-    "id": 455,
-    "name": "Uchae",
-    "group": "NATURE"
   },
   {
     "id": 456,
@@ -1605,86 +1120,6 @@
     "group": "Purple Kiss"
   },
   {
-    "id": 505,
-    "name": "Ireh",
-    "group": "Purple Kiss"
-  },
-  {
-    "id": 506,
-    "name": "Jieun",
-    "group": "Purple Kiss"
-  },
-  {
-    "id": 507,
-    "name": "Swan",
-    "group": "Purple Kiss"
-  },
-  {
-    "id": 508,
-    "name": "Yuki",
-    "group": "Purple Kiss"
-  },
-  {
-    "id": 0,
-    "name": "Layeon",
-    "group": "Purplebeck"
-  },
-  {
-    "id": 0,
-    "name": "Mini",
-    "group": "Purplebeck"
-  },
-  {
-    "id": 0,
-    "name": "Seyeon",
-    "group": "Purplebeck"
-  },
-  {
-    "id": 0,
-    "name": "Yeowool",
-    "group": "Purplebeck"
-  },
-  {
-    "id": 0,
-    "name": "Yerim",
-    "group": "Purplebeck"
-  },
-  {
-    "id": 0,
-    "name": "Hyunyoung",
-    "group": "Rainbow"
-  },
-  {
-    "id": 0,
-    "name": "Jaekyung",
-    "group": "Rainbow"
-  },
-  {
-    "id": 0,
-    "name": "Jisook",
-    "group": "Rainbow"
-  },
-  {
-    "id": 0,
-    "name": "Noeul",
-    "group": "Rainbow"
-  },
-  {
-    "id": 0,
-    "name": "Seungah",
-    "group": "Rainbow"
-  },
-  {
-    "id": 0,
-    "name": "Woori",
-    "group": "Rainbow"
-  },
-  {
-    "id": 0,
-    "name": "Yoonhye",
-    "group": "Rainbow"
-  },
-  {
     "id": 521,
     "name": "Irene",
     "group": "Red Velvet"
@@ -1740,56 +1175,6 @@
     "group": "Rocket Punch"
   },
   {
-    "id": 0,
-    "name": "Della",
-    "group": "Rockit Girl"
-  },
-  {
-    "id": 0,
-    "name": "Han Leeseul",
-    "group": "Rockit Girl"
-  },
-  {
-    "id": 0,
-    "name": "Ayeon",
-    "group": "Saturday"
-  },
-  {
-    "id": 0,
-    "name": "Haneul",
-    "group": "Saturday"
-  },
-  {
-    "id": 0,
-    "name": "Juyeon",
-    "group": "Saturday"
-  },
-  {
-    "id": 0,
-    "name": "Minseo",
-    "group": "Saturday"
-  },
-  {
-    "id": 0,
-    "name": "Yuki",
-    "group": "Saturday"
-  },
-  {
-    "id": 0,
-    "name": "Hana",
-    "group": "SECRET"
-  },
-  {
-    "id": 0,
-    "name": "Hyosung",
-    "group": "SECRET"
-  },
-  {
-    "id": 0,
-    "name": "Jieun",
-    "group": "SECRET"
-  },
-  {
     "id": 551,
     "name": "Denise",
     "group": "SECRET NUMBER"
@@ -1813,26 +1198,6 @@
     "id": 555,
     "name": "Soodam",
     "group": "SECRET NUMBER"
-  },
-  {
-    "id": 556,
-    "name": "Bora",
-    "group": "SISTAR"
-  },
-  {
-    "id": 557,
-    "name": "Dasom",
-    "group": "SISTAR"
-  },
-  {
-    "id": 558,
-    "name": "Hyorin",
-    "group": "SISTAR"
-  },
-  {
-    "id": 559,
-    "name": "Soyou",
-    "group": "SISTAR"
   },
   {
     "id": 560,
@@ -1875,41 +1240,6 @@
     "group": "SNSD"
   },
   {
-    "id": 0,
-    "name": "D.ana",
-    "group": "Sonamoo"
-  },
-  {
-    "id": 0,
-    "name": "Euijin",
-    "group": "Sonamoo"
-  },
-  {
-    "id": 0,
-    "name": "High.D",
-    "group": "Sonamoo"
-  },
-  {
-    "id": 0,
-    "name": "Minjae",
-    "group": "Sonamoo"
-  },
-  {
-    "id": 0,
-    "name": "Nahyun",
-    "group": "Sonamoo"
-  },
-  {
-    "id": 0,
-    "name": "New Sun",
-    "group": "Sonamoo"
-  },
-  {
-    "id": 0,
-    "name": "Sumin",
-    "group": "Sonamoo"
-  },
-  {
     "id": 577,
     "name": "Isa",
     "group": "STAYC"
@@ -1938,91 +1268,6 @@
     "id": 582,
     "name": "Yoon",
     "group": "STAYC"
-  },
-  {
-    "id": 0,
-    "name": "Gayoung",
-    "group": "Stellar"
-  },
-  {
-    "id": 0,
-    "name": "Hyeoeun",
-    "group": "Stellar"
-  },
-  {
-    "id": 0,
-    "name": "Jeonyul",
-    "group": "Stellar"
-  },
-  {
-    "id": 0,
-    "name": "Minhee",
-    "group": "Stellar"
-  },
-  {
-    "id": 587,
-    "name": "Boram",
-    "group": "T-ara"
-  },
-  {
-    "id": 588,
-    "name": "Eunjung",
-    "group": "T-ara"
-  },
-  {
-    "id": 589,
-    "name": "Hyomin",
-    "group": "T-ara"
-  },
-  {
-    "id": 590,
-    "name": "Jiyeon",
-    "group": "T-ara"
-  },
-  {
-    "id": 591,
-    "name": "Qri",
-    "group": "T-ara"
-  },
-  {
-    "id": 592,
-    "name": "Soyeon",
-    "group": "T-ara"
-  },
-  {
-    "id": 602,
-    "name": "Hyunbin",
-    "group": "TRI.BE"
-  },
-  {
-    "id": 603,
-    "name": "Jia",
-    "group": "TRI.BE"
-  },
-  {
-    "id": 604,
-    "name": "Jinha",
-    "group": "TRI.BE"
-  },
-  {
-    "id": 605,
-    "name": "Kelly",
-    "group": "TRI.BE"
-  },
-  {
-    "id": 606,
-    "name": "Mire",
-    "group": "TRI.BE"
-  },
-  {
-    "id": 607,
-    "name": "Soeun",
-    "group": "TRI.BE"
-  },
-  {
-    "id": 608,
-    "name": "SongSun",
-    "group": "TRI.BE"
   },
   {
     "id": 609,
@@ -2068,31 +1313,6 @@
     "id": 617,
     "name": "Tzuyu",
     "group": "Twice"
-  },
-  {
-    "id": 0,
-    "name": "Hyunjoo",
-    "group": "UNI.T"
-  },
-  {
-    "id": 0,
-    "name": "Jiwon",
-    "group": "UNI.T"
-  },
-  {
-    "id": 0,
-    "name": "NC.A",
-    "group": "UNI.T"
-  },
-  {
-    "id": 0,
-    "name": "Suji",
-    "group": "UNI.T"
-  },
-  {
-    "id": 0,
-    "name": "Yoonjo",
-    "group": "UNI.T"
   },
   {
     "id": 631,
@@ -2170,18 +1390,8 @@
     "group": "Weki Meki"
   },
   {
-    "id": 0,
-    "name": "Hyerim",
-    "group": "Wonder Girls"
-  },
-  {
     "id": 647,
     "name": "Sunmi",
-    "group": "Wonder Girls"
-  },
-  {
-    "id": 0,
-    "name": "Yenny",
     "group": "Wonder Girls"
   },
   {
@@ -2271,7 +1481,7 @@
   },
   {
     "id": 666,
-    "name": "Suyeon",
+    "name": "Sheon",
     "group": "Billlie"
   },
   {
@@ -2323,5 +1533,60 @@
     "id": 676,
     "name": "Jiwoo",
     "group": "NMIXX"
+  },
+  {
+    "id": 677,
+    "name": "Minji",
+    "group": "NEWJEANS"
+  },
+  {
+    "id": 678,
+    "name": "Hanni",
+    "group": "NEWJEANS"
+  },
+  {
+    "id": 679,
+    "name": "Danielle",
+    "group": "NEWJEANS"
+  },
+  {
+    "id": 680,
+    "name": "Haerin",
+    "group": "NEWJEANS"
+  },
+  {
+    "id": 681,
+    "name": "Hyein",
+    "group": "NEWJEANS"
+  },
+  {
+    "id": 682,
+    "name": "Chaewon",
+    "group": "LE SSERAFIM"
+  },
+  {
+    "id": 683,
+    "name": "Sakura",
+    "group": "LE SSERAFIM"
+  },
+  {
+    "id": 684,
+    "name": "Yunjin",
+    "group": "LE SSERAFIM"
+  },
+  {
+    "id": 685,
+    "name": "Kazuha",
+    "group": "LE SSERAFIM"
+  },
+  {
+    "id": 686,
+    "name": "Eunchae",
+    "group": "LE SSERAFIM"
+  },
+  {
+    "id": 687,
+    "group": "",
+    "name": "IU"
   }
 ]

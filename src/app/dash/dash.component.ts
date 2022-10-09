@@ -26,7 +26,8 @@ export class DashComponent implements OnInit {
     const girl = this.randomGirl()
     this.girls.push(girl)
     return this.ps.getRedditImage(girl).pipe(map(imageUrl => {
-      return { rows: 1, cols: 1, title: girl.name + " - " + girl.group, url: imageUrl } as Card
+      const title = girl.name + (girl.group ? " - " + girl.group : "")
+      return { rows: 1, cols: 1, title, url: imageUrl } as Card
     }))
   }))
 

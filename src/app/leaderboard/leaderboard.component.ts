@@ -50,19 +50,14 @@ export class LeaderboardComponent implements OnInit {
 @Component({
   selector: 'image-dialog',
   template: `
-  <h3 style="margin-top: 0px; margin-bottom: 18px" mat-dialog-title>
+  <h3 mat-dialog-title style="margin-top: 0px; margin-bottom: 18px">
     {{data.name}} - {{data.group}}
   </h3>
-  <div mat-dialog-content>
-    <img style='height: 100%; width: 100%; object-fit: cover' [src]=data.url>
-  </div>`
+  <img mat-dialog-content style='height: 100%; width: 100%; object-fit: cover' [src]=data.url>
+  `
 })
 export class ImageDialogComponent {
   constructor(
     public dialogRef: MatDialogRef<ImageDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) { }
-
-  onNoClick(): void {
-    this.dialogRef.close();
-  }
 }
