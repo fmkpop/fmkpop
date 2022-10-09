@@ -4,13 +4,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { DashComponent } from './dash/dash.component';
 
-
 const routes: Routes = [
   { path: 'leaderboard', component: LeaderboardComponent },
-  { path: '**', component: DashComponent }
+  { path: '', component: DashComponent },
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes), CommonModule],
+  imports: [RouterModule.forRoot(routes, {
+    onSameUrlNavigation: 'reload'
+  }), CommonModule],
   exports: [RouterModule],
   declarations: [],
 })

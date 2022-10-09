@@ -7,6 +7,7 @@ import data from '../../assets/id_girls.json'
 import { Girl, RedditJson, Card, GirlVote, VoteData } from '../model';
 import _ from 'lodash';
 import { PantryService } from '../pantry.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dash',
@@ -14,7 +15,13 @@ import { PantryService } from '../pantry.service';
   styleUrls: ['./dash.component.css']
 })
 export class DashComponent implements OnInit {
-  constructor(private http: HttpClient, private ps: PantryService) { }
+  constructor(
+    private http: HttpClient,
+    private ps: PantryService,
+    private router: Router,
+  ) {
+    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+  }
 
   url = `https://getpantry.cloud/apiv1/pantry/b79d34bf-9370-43fc-b088-d2ba6e5588e6/basket/girls`
   buttonStates: string[] = ['', '', '']
