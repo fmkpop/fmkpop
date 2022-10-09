@@ -96,7 +96,7 @@ export class DashComponent implements OnInit {
   }
 
   randId(): number {
-    const rand = Math.floor(Math.random() * 676) + 1
+    const rand = Math.floor(Math.random() * 687) + 1
     return this.girls.some(g => g.id === rand) ? this.randId() : rand
   }
 
