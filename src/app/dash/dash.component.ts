@@ -1,13 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
-import { Observable, forkJoin } from 'rxjs';
-import { map } from 'rxjs/operators';
-import data from '../../assets/id_girls.json'
-import { Girl, RedditJson, Card, GirlVote, VoteData } from '../model';
-import _ from 'lodash';
-import { PantryService } from '../pantry.service';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { forkJoin, Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import data from '../../assets/id_girls.json';
+import { Card, Girl, VoteData } from '../model';
+import { PantryService } from '../pantry.service';
+import { VotesDialogComponent } from './votes-dialog.component';
 
 @Component({
   selector: 'app-dash',
@@ -19,6 +19,7 @@ export class DashComponent implements OnInit {
     private http: HttpClient,
     private ps: PantryService,
     private router: Router,
+    public dialog: MatDialog
   ) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
   }
@@ -39,7 +40,7 @@ export class DashComponent implements OnInit {
   }))
 
   ngOnInit() {
-    this.readNetworkStorage().subscribe(data => this.data = data)
+    this.ps.getVoteData(this.girls).subscribe(data => this.data = data)
   }
 
   uniqueSelections = () => JSON.stringify([...this.buttonStates].sort()) == "[\"f\",\"k\",\"m\"]"
@@ -59,7 +60,7 @@ export class DashComponent implements OnInit {
 
   submitResults() {
     const time = new Date().toISOString()
-    const girlVotes = this.girls.map((g, i) => { return { ...g, vote: this.buttonStates[i] } })
+    const girlVotes = this.girls.map((g, i) => ({ ...g, vote: this.buttonStates[i] }))
     const body = { [time]: girlVotes }
     this.setLocalStorage(JSON.stringify(body))
     this.setNetworkStorage(body)
@@ -67,13 +68,12 @@ export class DashComponent implements OnInit {
   }
 
   setNetworkStorage(payload: {}) {
-    this.http.put(this.url, payload).subscribe(success => window.location.reload(), error => window.location.reload())
+    this.http.put(this.url, payload).subscribe()
   }
 
   setLocalStorage(newVotes: string) {
     const curr = localStorage.getItem("fmkpop")
     const totalVotes = curr ? curr + ', ' + newVotes : newVotes
-    console.log("ls", totalVotes)
     localStorage.setItem("fmkpop", totalVotes)
   }
 
@@ -82,24 +82,13 @@ export class DashComponent implements OnInit {
     this.localVotes = data.map((x: any) => Object.values(x)[0])
   }
 
-  readNetworkStorage(): Observable<VoteData[]> {
-    const fmk = (xs: string[], a: string) => xs.filter(l => l == a).length
-
-    return this.http.get(this.url).pipe(map(data => {
-      const votes: GirlVote[] = _.flatten(Object.values(data))
-      const girlData = this.girls.map(g => votes.filter(v => g.id == v.id))
-      const scores = girlData.map(g => g.map(v => v.vote))
-      const numbers = scores.map((s, i) => {
-        return { g: this.girls[i].name, f: fmk(s, 'f'), m: fmk(s, 'm'), k: fmk(s, 'k') }
-      })
-      console.log(numbers)
-      return numbers
-    }))
-  }
-
   alertData() {
-    const str = this.data.map(d => `${d.g} - f: ${d.f}, m: ${d.m}, k: ${d.k}`).join('\n')
-    alert(str)
+    const ref = this.dialog.open(VotesDialogComponent, {
+      data: { girl: this.data }
+    })
+    ref.afterClosed().subscribe(() => {
+      this.router.navigate(['/'])
+    })
   }
 
   randId(): number {
@@ -112,3 +101,4 @@ export class DashComponent implements OnInit {
     return girl
   }
 }
+

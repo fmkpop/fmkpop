@@ -20,13 +20,14 @@ import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatDialogModule } from '@angular/material/dialog';
+import { VotesDialogComponent } from './dash/votes-dialog.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DashComponent,
-
+    VotesDialogComponent,
     LeaderboardComponent
   ],
   imports: [

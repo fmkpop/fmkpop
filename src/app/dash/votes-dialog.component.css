@@ -1,0 +1,16 @@
+th,
+td {
+  padding: 5px 15px;
+}
+
+th {
+  font-weight: 500;
+}
+
+.mat-dialog-content {
+  margin-top: 0px;
+}
+
+button {
+  background-color: #ebe0f3;
+}

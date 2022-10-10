@@ -2,8 +2,10 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
 import _ from 'lodash';
-import { GirlVote, GirlTable, Girl, RedditJson } from './model';
+import { GirlVote, GirlTable, Girl, RedditJson, VoteData } from './model';
 import { GroupedObservable, Observable } from 'rxjs';
+
+const fmk = (xs: string[], a: string) => xs.filter(l => l == a).length
 
 @Injectable({
   providedIn: 'root'
@@ -14,9 +16,18 @@ export class PantryService {
 
   baseUrl = `https://getpantry.cloud/apiv1/pantry/b79d34bf-9370-43fc-b088-d2ba6e5588e6/basket/girls`
 
-  getLeaderboardStats() {
-    const fmk = (xs: string[], a: string) => xs.filter(l => l == a).length
+  getVoteData(girls: Girl[]): Observable<VoteData[]> {
+    return this.http.get(this.baseUrl).pipe(map(data => {
+      const votes: GirlVote[] = _.flatten(Object.values(data))
+      const girlData = girls.map(g => votes.filter(v => g.id == v.id))
+      const scores = girlData.map(g => g.map(v => v.vote))
+      return scores.map((s, i) => {
+        return { g: girls[i].name, f: fmk(s, 'f'), m: fmk(s, 'm'), k: fmk(s, 'k') }
+      })
+    }))
+  }
 
+  getLeaderboardStats() {
     return this.http.get(this.baseUrl).pipe(map(data => {
       const votes: GirlVote[] = _.flatten(Object.values(data))
       const grouped = _.groupBy(votes, 'id')
