@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 import { forkJoin, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import data from '../../assets/id_girls.json';
-import { Card, Girl, VoteData } from '../model';
+import { Card, Girl, GirlVote, VoteData } from '../model';
 import { PantryService } from '../pantry.service';
 import { VotesDialogComponent } from './votes-dialog.component';
 
@@ -64,7 +64,7 @@ export class DashComponent implements OnInit {
     const body = { [time]: girlVotes }
     this.setLocalStorage(JSON.stringify(body))
     this.setNetworkStorage(body)
-    this.alertData()
+    this.alertData(girlVotes)
   }
 
   setNetworkStorage(payload: {}) {
@@ -82,9 +82,9 @@ export class DashComponent implements OnInit {
     this.localVotes = data.map((x: any) => Object.values(x)[0])
   }
 
-  alertData() {
+  alertData(votes: GirlVote[]) {
     const ref = this.dialog.open(VotesDialogComponent, {
-      data: { girl: this.data }
+      data: { girls: this.data, votes }
     })
     ref.afterClosed().subscribe(() => {
       this.router.navigate(['/'])

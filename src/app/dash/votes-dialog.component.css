@@ -1,5 +1,6 @@
 th,
 td {
+  vertical-align: middle;
   padding: 5px 15px;
 }
 
@@ -12,5 +13,12 @@ th {
 }
 
 button {
-  background-color: #ebe0f3;
+  background-color: #d5acf3;
+}
+
+.purple {
+  color: #a68bf0;
+  /* font-size: smaller; */
+  display: inline-table;
+  /* padding-bottom: 1px; */
 }

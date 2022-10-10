@@ -1,6 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { Girl, GirlVote, VoteData } from '../model';
 
 @Component({
   selector: 'votes-dialog',
@@ -13,11 +14,11 @@ import { Router } from '@angular/router';
         <th>married</th>
         <th>killed</th>
       </tr>
-      <tr *ngFor="let girl of data.girl">
+      <tr *ngFor="let girl of data.girls">
         <td>{{girl.g}}</td>
-        <td>{{girl.f}}</td>
-        <td>{{girl.m}}</td>
-        <td>{{girl.k}}</td>
+        <td>{{girl.f}}<div class="purple">{{check(girl.g, "f")}}</div></td>
+        <td>{{girl.m}}<div class="purple">{{check(girl.g, "m")}}</div></td>
+        <td>{{girl.k}}<div class="purple">{{check(girl.g, "k")}}</div></td>
       </tr>
     </table>
   </div>
@@ -31,7 +32,16 @@ export class VotesDialogComponent {
   constructor(
     public dialogRef: MatDialogRef<VotesDialogComponent>,
     private router: Router,
-    @Inject(MAT_DIALOG_DATA) public data: any) { }
+    @Inject(MAT_DIALOG_DATA) public data: {
+      girls: VoteData[],
+      votes: GirlVote[]
+    }) {
+    console.log(data)
+  }
+
+  check(name: string, vote: string) {
+    return this.data.votes.find(v => v.vote == vote && v.name == name) ? '+1' : ''
+  }
 
   onClick() {
     this.router.navigate(['/'])
