@@ -4,6 +4,7 @@ import { map } from 'rxjs/operators';
 import _ from 'lodash';
 import { GirlVote, GirlTable, Girl, RedditJson, VoteData } from './model';
 import { GroupedObservable, Observable } from 'rxjs';
+import localjson from '../assets/id_girls.json'
 
 const fmk = (xs: string[], a: string) => xs.filter(l => l == a).length
 
@@ -31,13 +32,14 @@ export class PantryService {
     return this.http.get(this.baseUrl).pipe(map(data => {
       const votes: GirlVote[] = _.flatten(Object.values(data))
       const grouped = _.groupBy(votes, 'id')
-      const cleaned = Object.values(grouped).map(g => {
+      const sums = Object.values(grouped).map(g => {
         const f = fmk(g.map(x => x.vote), 'f')
         const m = fmk(g.map(x => x.vote), 'm')
         const k = fmk(g.map(x => x.vote), 'k')
         return { id: g[0].id, name: g[0].name, group: g[0].group, f, m, k }
       })
-      return cleaned.filter(g => g.id != 0) as GirlTable[]
+      const realIds = localjson.map(x => x.id)
+      return sums.filter(g => realIds.includes(g.id)) as GirlTable[]
     }))
   }
 

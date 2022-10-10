@@ -70,6 +70,11 @@
     "group": "aespa"
   },
   {
+    "id": 37,
+    "name": "Winter",
+    "group": "aespa"
+  },
+  {
     "id": 52,
     "name": "Seolhyun",
     "group": "AOA"
@@ -630,7 +635,7 @@
     "group": "Hello Venus"
   },
   {
-    "id": 310,
+    "id": 0,
     "name": "Seoyoung",
     "group": "Hello Venus"
   },

@@ -51,3 +51,10 @@ mat-button-toggle {
   flex-direction: row;
   display: flex;
 }
+
+.auto {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  margin-left: -52px;
+}

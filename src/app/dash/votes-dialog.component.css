@@ -18,7 +18,13 @@ button {
 
 .purple {
   color: #a68bf0;
-  /* font-size: smaller; */
   display: inline-table;
-  /* padding-bottom: 1px; */
+}
+
+span {
+  font-size: 13px;
+}
+
+mat-slide-toggle {
+  margin-left: 10px;
 }

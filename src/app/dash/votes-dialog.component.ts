@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { Girl, GirlVote, VoteData } from '../model';
@@ -23,12 +23,16 @@ import { Girl, GirlVote, VoteData } from '../model';
     </table>
   </div>
   <div mat-dialog-actions align="end">
-    <button mat-button color="#a68bf0" (click)="onClick()">next</button>
+    <span>auto</span>
+    <mat-slide-toggle color="primary" [(ngModel)]="auto"></mat-slide-toggle>
+  </div>
+  <div mat-dialog-actions align="end">
+    <button mat-button (click)="onClick()">&nbsp;&nbsp;next&nbsp;&nbsp;</button>
   </div>
   `,
   styleUrls: ['votes-dialog.component.css']
 })
-export class VotesDialogComponent {
+export class VotesDialogComponent implements OnInit {
   constructor(
     public dialogRef: MatDialogRef<VotesDialogComponent>,
     private router: Router,
@@ -36,7 +40,13 @@ export class VotesDialogComponent {
       girls: VoteData[],
       votes: GirlVote[]
     }) {
-    console.log(data)
+  }
+
+  auto = localStorage.getItem('auto') == 'true'
+
+  ngOnInit(): void {
+    if (this.auto)
+      this.onClick()
   }
 
   check(name: string, vote: string) {
@@ -44,7 +54,7 @@ export class VotesDialogComponent {
   }
 
   onClick() {
-    this.router.navigate(['/'])
+    localStorage.setItem('auto', this.auto ? 'true' : 'false')
     this.dialogRef.close()
   }
 }

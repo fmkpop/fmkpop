@@ -100,5 +100,12 @@ export class DashComponent implements OnInit {
     const girl = data.find(girl => girl.id === this.randId()) || this.randomGirl()
     return girl
   }
+
+  isAuto = localStorage.getItem('auto') == 'true'
+
+  disableAuto() {
+    localStorage.setItem('auto', 'false')
+    this.isAuto = false
+  }
 }
 
