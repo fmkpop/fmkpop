@@ -42,10 +42,11 @@ export class PantryService {
   }
 
   redditSearch(girl: Girl | GirlTable) {
-    const g = (girl.group as any).replaceAll(' ', '%2B').replace('IZ*ONE', 'IZ').replace('(G)I-DLE', 'DLE')
+    const clean = (girl.group as any).replaceAll(' ', '%2B').replace('IZ*ONE', 'IZ').replace('(G)I-DLE', 'DLE')
+    const g = girl.group ? `flair%3A` + clean + "+" : ``
     const n = girl.name.replace(' ', '%2B')
     const exclusions = `-site%3Agfycat.com+-site%3Av.redd.it+-site%3Ainstagram.com+-site%3Astreamable.com+-url%3Agallery+-url%3A%2F%2Fa%2F%2F+-url%3Ajpg%3Aorig`
-    return `https://reddit.com/r/kpics/search.json?jsonp=JSONP_CALLBACK&q=flair%3A${g}+${n}+${exclusions}&restrict_sr=on&sort=top&t=all`
+    return `https://reddit.com/r/kpics/search.json?jsonp=JSONP_CALLBACK&q=${g}${n}+${exclusions}&restrict_sr=on&sort=top&t=all`
   }
 
   getRedditImage(girl: Girl | GirlTable): Observable<string> {

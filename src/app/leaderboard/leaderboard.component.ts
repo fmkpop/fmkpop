@@ -51,7 +51,7 @@ export class LeaderboardComponent implements OnInit {
   selector: 'image-dialog',
   template: `
   <h3 mat-dialog-title style="margin-top: 0px; margin-bottom: 18px">
-    {{data.name}} - {{data.group}}
+    {{data.name}}{{data.group ? " - " + data.group : ""}}}}
   </h3>
   <img mat-dialog-content style='height: 100%; width: 100%; object-fit: cover' [src]=data.url>
   `

@@ -10,7 +10,7 @@
     </ng-container>
     <ng-container matColumnDef="group">
       <mat-header-cell *matHeaderCellDef mat-sort-header>group</mat-header-cell>
-      <mat-cell *matCellDef="let girl">{{girl.group}}</mat-cell>
+      <mat-cell *matCellDef="let girl">{{girl.group || "(soloist)"}}</mat-cell>
     </ng-container>
     <ng-container matColumnDef="f">
       <mat-header-cell *matHeaderCellDef mat-sort-header>fucked</mat-header-cell>
