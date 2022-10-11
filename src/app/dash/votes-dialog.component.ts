@@ -1,7 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Router } from '@angular/router';
-import { Girl, GirlVote, VoteData } from '../model';
+import { GirlVote, VoteData } from '../model';
 
 @Component({
   selector: 'votes-dialog',
@@ -35,7 +34,6 @@ import { Girl, GirlVote, VoteData } from '../model';
 export class VotesDialogComponent implements OnInit {
   constructor(
     public dialogRef: MatDialogRef<VotesDialogComponent>,
-    private router: Router,
     @Inject(MAT_DIALOG_DATA) public data: {
       girls: VoteData[],
       votes: GirlVote[]
@@ -44,9 +42,8 @@ export class VotesDialogComponent implements OnInit {
 
   auto = localStorage.getItem('auto') == 'true'
 
-  ngOnInit(): void {
-    if (this.auto)
-      this.onClick()
+  ngOnInit() {
+    if (this.auto) this.onClick()
   }
 
   check(name: string, vote: string) {

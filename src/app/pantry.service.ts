@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
 import _ from 'lodash';
 import { GirlVote, GirlTable, Girl, RedditJson, VoteData } from './model';
-import { GroupedObservable, Observable } from 'rxjs';
 import localjson from '../assets/id_girls.json'
 
 const fmk = (xs: string[], a: string) => xs.filter(l => l == a).length
@@ -17,7 +16,11 @@ export class PantryService {
 
   baseUrl = `https://getpantry.cloud/apiv1/pantry/b79d34bf-9370-43fc-b088-d2ba6e5588e6/basket/girls`
 
-  getVoteData(girls: Girl[]): Observable<VoteData[]> {
+  setNetworkStorage(payload: {}) {
+    this.http.put(this.baseUrl, payload).subscribe()
+  }
+
+  getVoteData(girls: Girl[]) {
     return this.http.get(this.baseUrl).pipe(map(data => {
       const votes: GirlVote[] = _.flatten(Object.values(data))
       const girlData = girls.map(g => votes.filter(v => g.id == v.id))
@@ -51,7 +54,7 @@ export class PantryService {
     return `https://reddit.com/r/kpics/search.json?jsonp=JSONP_CALLBACK&q=${g}${n}+${exclusions}&restrict_sr=on&sort=top&t=all`
   }
 
-  getRedditImage(girl: Girl | GirlTable): Observable<string> {
+  getRedditImage(girl: Girl | GirlTable) {
     const reddit = this.redditSearch(girl)
     console.log(String(reddit).replace('.json', ''))
     return this.http.jsonp<RedditJson>(reddit, '').pipe(map(res => {

@@ -24,7 +24,7 @@ export class DashComponent implements OnInit {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
   }
 
-  url = `https://getpantry.cloud/apiv1/pantry/b79d34bf-9370-43fc-b088-d2ba6e5588e6/basket/girls`
+  // url = `https://getpantry.cloud/apiv1/pantry/b79d34bf-9370-43fc-b088-d2ba6e5588e6/basket/girls`
   buttonStates: string[] = ['', '', '']
   girls: Girl[] = []
   localVotes = []
@@ -63,12 +63,8 @@ export class DashComponent implements OnInit {
     const girlVotes = this.girls.map((g, i) => ({ ...g, vote: this.buttonStates[i] }))
     const body = { [time]: girlVotes }
     this.setLocalStorage(JSON.stringify(body))
-    this.setNetworkStorage(body)
+    this.ps.setNetworkStorage(body)
     this.alertData(girlVotes)
-  }
-
-  setNetworkStorage(payload: {}) {
-    this.http.put(this.url, payload).subscribe()
   }
 
   setLocalStorage(newVotes: string) {
@@ -97,8 +93,7 @@ export class DashComponent implements OnInit {
   }
 
   randomGirl(): Girl {
-    const girl = data.find(girl => girl.id === this.randId()) || this.randomGirl()
-    return girl
+    return data.find(girl => girl.id === this.randId()) || this.randomGirl()
   }
 
   isAuto = localStorage.getItem('auto') == 'true'
