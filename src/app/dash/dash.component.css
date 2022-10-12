@@ -1,9 +1,32 @@
-.dashboard-card {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
+
+@media only screen and (min-width: 600px) {
+  .dashboard-card {
+    max-width: 20vw;
+  }
+
+  .img {
+    max-height: 70vh;
+    min-height: 40vh;
+
+  }
+}
+
+.dashboard-card {
+  margin: 8px 16px;
+}
+
+img {
+  margin-bottom: 0;
+  /* max-height: 50vh; */
+  object-fit: cover;
+}
+
+
 
 .dashboard-card-content {
   text-align: center;
@@ -11,13 +34,6 @@
 
 .mat-card-header {
   margin-left: -16px;
-}
-
-img {
-  margin-bottom: 0;
-  max-height: 70vh;
-  min-height: 40vh;
-  object-fit: cover;
 }
 
 .nugu {
@@ -32,11 +48,6 @@ img {
 
 .mat-button-toggle-label-content {
   font-size: large;
-}
-
-mat-grid-tile {
-  height: 100%;
-  padding-top: 0;
 }
 
 mat-card-actions {

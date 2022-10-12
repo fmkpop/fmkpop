@@ -24,18 +24,17 @@ export class DashComponent implements OnInit {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
   }
 
-  // url = `https://getpantry.cloud/apiv1/pantry/b79d34bf-9370-43fc-b088-d2ba6e5588e6/basket/girls`
   buttonStates: string[] = ['', '', '']
   girls: Girl[] = []
   localVotes = []
   data!: VoteData[]
   showNextButton = false
-  cards: Observable<Card[]> = forkJoin([{}, {}, {}].map(_ => {
+  cards = forkJoin([{}, {}, {}].map(_ => {
     const girl = this.randomGirl()
     this.girls.push(girl)
     return this.ps.getRedditImage(girl).pipe(map(imageUrl => {
       const title = girl.name + (girl.group ? " - " + girl.group : "")
-      return { rows: 1, cols: 1, title, url: imageUrl } as Card
+      return { title, url: imageUrl }
     }))
   }))
 

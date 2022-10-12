@@ -1,5 +1,5 @@
-<mat-grid-list cols="3">
-  <mat-grid-tile *ngFor="let card of cards | async; let i = index">
+<div class="container">
+  <div *ngFor="let card of cards | async; let i = index">
     <mat-card class="dashboard-card mat-elevation-z2">
       <mat-card-header>
         <mat-card-title>
@@ -16,6 +16,6 @@
         </mat-button-toggle-group>
       </mat-card-actions>
     </mat-card>
-  </mat-grid-tile>
-</mat-grid-list>
+  </div>
+</div>
 <button class="auto" mat-stroked-button *ngIf="isAuto" (click)="disableAuto()">disable auto</button>
