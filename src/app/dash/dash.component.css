@@ -64,7 +64,7 @@ mat-button-toggle {
 
 .auto {
   position: absolute;
-  bottom: 24px;
+  top: 24px;
   left: 50%;
   margin-left: -52px;
 }
