@@ -1,32 +1,28 @@
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 @media only screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .dashboard-card {
     max-width: 20vw;
   }
 
-  .img {
+  img {
     max-height: 70vh;
     min-height: 40vh;
-
   }
 }
 
 .dashboard-card {
-  margin: 8px 16px;
+  margin: 16px;
 }
 
 img {
   margin-bottom: 0;
-  /* max-height: 50vh; */
   object-fit: cover;
 }
-
-
 
 .dashboard-card-content {
   text-align: center;
