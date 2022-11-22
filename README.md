@@ -4,6 +4,7 @@
 
 
 ### Todo
+- Completely broken on Firefox? wtf?
 - ~~refactor into seperate components~~ ✅
 - add image fetch retry on fail - fixed? haven't seen this issue in a while
 - ~~add fixed image height + scaled images~~ ✅
