@@ -4,12 +4,12 @@
 
 
 ### Todo
-- refactor into seperate components
-- add image fetch retry on fail
-- add fixed image height + scaled images
-- nugu purge
+- ~~refactor into seperate components~~ ✅
+- add image fetch retry on fail - fixed? haven't seen this issue in a while
+- ~~add fixed image height + scaled images~~ ✅
+- ~~nugu purge~~ ✅
 - change selection colours to reflect choice
-- add bar chart displaying results after voting
-- add next button
-- add girls leaderboard
-- filter for portrait images only 
+- ~~add bar chart displaying results after voting~~ ✅ - won't do - final stats is good enough
+- ~~add next button~~ ✅
+- ~~add girls leaderboard~~ ✅
+- filter for portrait images only - probably a better solution than scuffed scaling
