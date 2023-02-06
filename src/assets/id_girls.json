@@ -1483,5 +1483,40 @@
     "id": 687,
     "group": "",
     "name": "IU"
+  },
+  {
+    "id": 688,
+    "group": "CLASS:y",
+    "name": "Hyungseo"
+  },
+  {
+    "id": 689,
+    "group": "CLASS:y",
+    "name": "Chaewon"
+  },
+  {
+    "id": 690,
+    "group": "CLASS:y",
+    "name": "Hyeju"
+  },
+  {
+    "id": 691,
+    "group": "CLASS:y",
+    "name": "Riwon"
+  },
+  {
+    "id": 692,
+    "group": "CLASS:y",
+    "name": "Jimin"
+  },
+  {
+    "id": 693,
+    "group": "CLASS:y",
+    "name": "Boeun"
+  },
+  {
+    "id": 694,
+    "group": "CLASS:y",
+    "name": "Seonyou"
   }
 ]
