@@ -14,7 +14,7 @@ export class PantryService {
 
   constructor(private http: HttpClient) { }
 
-  baseUrl = `https://getpantry.cloud/apiv1/pantry/b79d34bf-9370-43fc-b088-d2ba6e5588e6/basket/girls`
+  baseUrl = `https://getpantry.cloud/apiv1/pantry/b69410a3-6dcf-49d5-8a67-55415b5900c9/basket/girls`
 
   setNetworkStorage(payload: {}) {
     this.http.put(this.baseUrl, payload).subscribe()
